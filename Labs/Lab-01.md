@@ -103,3 +103,5 @@ In this lab, you have completed the following:
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
 + What is the value of using GHAS? 
+
+### You have successfully completed the lab, Click on **Next** to continue.

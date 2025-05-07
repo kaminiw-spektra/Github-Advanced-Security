@@ -140,3 +140,5 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 In this module, we have completed the following:
 -  Used the dependency review action to stop a Pull Request that contains the log vulnerability
+
+### You have successfully completed the lab, Click on **Next** to continue.

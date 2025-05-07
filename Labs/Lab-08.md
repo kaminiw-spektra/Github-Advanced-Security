@@ -23,7 +23,7 @@ In this lab, you will perform:
 
 1. Select the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization from the top.
 
-   ![](../images/a41.png)
+   ![](../images/a41a.png)
 
 1. Navigate to your repository’s **Security** tab.
 
@@ -44,7 +44,6 @@ In this lab, you will perform:
    - **Cross-Site Scripting (CWE-79):** It involves injecting malicious scripts into web pages viewed by other users. This can lead to data theft, session hijacking, or defacement. Preventing XSS involves proper input validation, output encoding, and using security frameworks that automatically handle these issues78.
 
    ![](../images/template2.png)
-
 
 1. Click on **Save as** and select **Published campaign**.
 
@@ -74,12 +73,12 @@ In this lab, you will perform:
 
 11. Click on **Ready for review**.
 
-    ![](../images/seccamp5a.png)
+    ![](../images/seccamp5b.png)
 
 12. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
-    ![](../images/seccamp6a.png)
-    ![](../images/seccamp7a.png)
+    ![](../images/seccamp6b.png)
+    ![](../images/seccamp7b.png)
 
 ### Task 2: Tracking Security Campaign
 
@@ -102,29 +101,44 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-      1. Click on the open alert as metioned below.
+1. Click on the open alert as metioned below.
 
-         ![](../images/a48.png)
+   ![](../images/a48.png)
 
-      1. On the selected alert page click on **Generate fix** and once it is completed click on **Commit to new branch**
+1. On the selected alert page click on **Commit to new branch**.
 
-         ![](../images/a49a.png)
+   ![](../images/a49a.png)
 
-      1. Now try refreshing the page.
+   >**Note:** There is a chance that the option to **Commit to new branch** may not appear. In this case, look for the **Generate Fix** option, click on it, and once the fix is generated, you will be able to commit.
 
-      1. Now you can see that the alert has been closed.
+1. Select the option to open a pull request, then click **Commit changes**.
 
-         ![](../images/a51a.png)
+    ![](../images/seccamp4a.png)
 
-         ![](../images/a51.png)
+1. Click on **Ready for review**.
 
-         > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update. Refresh the page after a few minutes.
+    ![](../images/seccamp5b.png)
 
-      1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. 
+1. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
-         ![](../images/a52.png)
+    ![](../images/seccamp6b.png)
+    ![](../images/seccamp7b.png)
 
-         ![](../images/a53a.png)
+1. Now try refreshing the page.
+
+1. Now you can see that the alert has been closed.
+
+   ![](../images/a51a.png)
+
+   ![](../images/a51.png)
+
+   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update. Refresh the page after a few minutes.
+
+1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. 
+
+   ![](../images/a52.png)
+
+   ![](../images/a53a.png)
 
 ### Task 3: Editing and Managing Security Campigns
 
@@ -159,3 +173,5 @@ In this lab you have completed the following:
 - Created a campaign from a template
 - Tracked Security Campaigns
 - Edited and Managed Security Campigns
+
+### You have successfully completed the lab, Click on **Next** to continue.

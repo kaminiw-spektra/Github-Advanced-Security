@@ -1,8 +1,42 @@
 # Getting Started with Your GitHub Advanced Security
 
+### Overall Estimated Duration: 8 Hours
 
-Welcome to our GitHub Advanced Security workshop!, you'll learn about key features like Secret Scanning, Software Composition Analysis, and Code Scanning, along with scaling out GitHub Advanced Security and integrating Microsoft Defender for Cloud. Get ready to enhance your GitHub security skills!
+## Overview
 
+In this hands-on lab, you’ll explore GitHub Advanced Security (GHAS) to enhance the security of your repositories. The lab includes using Dependabot and Software Composition Analysis (SCA) to identify and remediate dependency vulnerabilities.
+You'll enable secret scanning with push protection, create custom secret patterns, and observe how active secrets are detected. You’ll also enable code scanning to detect security issues in your code and try out Copilot Autofix to automatically suggest secure code fixes. Finally, you'll scale GHAS adoption, review insights via the security dashboard, and integrate with external tools using webhooks.
+
+## Objective
+
+By the end of this lab, you will be able to:
+
+- **Use your own data with Azure OpenAI**: This hands-on exercise aims to provision an Azure OpenAI resource and deploy a model, observing its normal chat behavior initially. You will then connect your data, interact with the model using this data, set up and configure an application in Cloud Shell, and run it to test its functionality.
+- **Explore content filters in Azure OpenAI**: This hands-on exercise aims to deploy an OpenAI model to generate natural language output and explore content filters to ensure the generated content meets desired standards. The content filtering system recognizes and responds to particular types of potentially dangerous content in input prompts and output completions.
+  
+## Pre-requisites
+
+- Basic knowledge of GitHub
+- Fundamental understanding of security principles, including vulnerability management and secure coding practices
+- Familiarity with navigating and managing code repositories
+
+## Architecture
+
+The architecture flow involves using the Azure OpenAI Service to integrate your data with a large language model (LLM), allowing you to manage how the model interacts with your information by focusing on specific topics or blending it with pre-trained results. The service employs default content filters to detect and remove harmful content, and you can also apply custom filters tailored to your needs. This approach ensures that content filtering is effectively used to uphold responsible AI practices, providing insights into its role in maintaining secure and safe interactions.
+
+## Architecture Diagram
+
+  ![](../media/arch15.PNG)
+
+## Explanation of Components
+
+1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+1. **Azure OpenAI Models**: Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
+1. **Azure CloudShell**: Azure CloudShell offers an integrated, browser-based shell experience for managing Azure resources. It provides a ready-to-use environment with pre-installed tools and access to both Bash and PowerShell.
+1. **Storage Account**: Manages and stores data, providing scalable and secure cloud storage solutions.
+1. **Content Filter**: Detects and removes harmful content to ensure safe and responsible AI interactions.
+
+## Getting Started with the Lab
 ## Accessing Your Lab
  
 Once you're ready to begin, you’ll find the **Lab Guide**, which you will use throughout the lab.
@@ -68,3 +102,16 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 1. Click "Next" from the bottom right corner to embark on your Lab journey!
 
    ![Picture1](./images/Sec1.png)
+
+## Support Contact
+
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+
+Learner Support Contacts:
+
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now, click on Next from the lower right corner to move on to the next page.
+
+## Happy Learning!!
