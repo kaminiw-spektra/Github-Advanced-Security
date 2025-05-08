@@ -44,3 +44,5 @@ Open the [GitHub Advisory Database](https://github.com/advisories) and work thro
   - If you find a CVE that is not in our GHADB, please let your account team know
     - Share the CVE number with us, and we will prioritize it
     - Our curation team has built tooling to prioritize unreviewed CVEs
+
+### You have successfully completed the lab, Click on **Next** to continue.

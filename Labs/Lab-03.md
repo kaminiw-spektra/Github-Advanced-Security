@@ -132,3 +132,5 @@ CodeQL is a programming language and associated tools that treat code like data.
 1. [Code Scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning)
 
 1. [Secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
+
+### You have successfully completed the lab, Click on **Next** to continue.

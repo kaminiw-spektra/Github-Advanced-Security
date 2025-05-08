@@ -15,6 +15,10 @@ In this lab, you will learn and perform:
 - Task 3: Run a code scan
 - Task 4: Apply autofixes to vulnerabilities
 
+## Architecture Diagram
+
+![](../images/arch15a.png)
+
 ## Estimated timing: 90 minutes
    
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  
@@ -25,7 +29,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](../images/getrepo.png)
+   ![github-advisory-database](../images/getrepoa.png)
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
@@ -47,19 +51,15 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. Open a *Pull request* into the **main** branch, click on **Create pull request.**
 
-   ![github-advisory-database](../images/sec4.png)
-
-1. Click on **Create pull request** again.   
-
    ![github-advisory-database](../images/gp.png)
-     
+
 1. It may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
    
    - CodeQL flag this pull request with a _Query built from user-controlled sources_ finding.
 
      ![clear-text-logging-finding](../images/prfailat02a.png)
 
-     ![clear-text-logging-finding](../images/prfailat02.png) 
+     ![clear-text-logging-finding](../images/prfailat02b.png) 
 
 Refer to the link for more information: [Triaging code scanning alerts in pull requests](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests)
 
@@ -149,7 +149,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
    ![](../images/scant.png)
 
-1. Review the list of vulnerabilities and click on an alert to view details.
+1. Review the list of vulnerabilities and click on an alert for **app.py** file to view details.
 
    ![](../images/scana.png) 
 
@@ -165,7 +165,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
    ![](../images/newchangeb.png)
 
-1. Click on **Ready for review**.
+1. Once All checks have been passed then click on **Ready for review**.
 
    ![](../images/newchangec.png)
 
@@ -188,3 +188,5 @@ In this lab you have completed the following:
 - Create a code with potencial security vulnerabilities
 - Run a code scan
 - Apply autofixes to fix code vulnerabilities
+
+### You have successfully completed the lab, Click on **Next** to continue.

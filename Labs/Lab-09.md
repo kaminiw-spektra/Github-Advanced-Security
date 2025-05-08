@@ -74,23 +74,21 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
 1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
-   ![Picture1](../images/dashboard1.png)
+   ![Picture1](../images/dashboard1a.png)
   
-
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
-   ![Picture1](../images/mod1org8.png)
+   ![Picture1](../images/mod1org8a.png)
 
 1. Click on the **Coverage** option to access detailed information about the security coverage for your repositories. This section provides insights into the extent to which your code is being analyzed for vulnerabilities, including the number of lines of code covered by security scans and the effectiveness of your security measures. By reviewing the coverage data, you can ensure that your security scanning is comprehensive and identify areas where additional coverage may be needed.
 
-   ![Picture1](../images/mod1org9.png)
+   ![Picture1](../images/mod1org9a.png)
    
 1. Analyze the metrics and data provided in the reports to identify areas for improvement and prioritize security efforts.
 
 ## Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
 
 GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms. Thus enabling automated workflows and real-time notifications based on repository activities.
-
 
 ### Push events to an outside reporting function in the App.
 
@@ -116,7 +114,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. From the Create Function App tab, select **Consumption (1)** and click on **Select (2)**.
 
-   ![Picture1](../images/ghas-exercise1-9.png)
+   ![Picture1](../images/ghas-exercise1-9a.png)
 
 1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create**.
 
@@ -138,6 +136,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
  
 1. Once the deployment is completed, click on **Go to resource**.
 
+   ![Picture1](../images/functionapp3a.png)
+
 1. On the **Overview (1)** page of the **Function app**, under the  **Functions** tab, click on **Create function (2)**. It will open a  page for **Create function**. Search for and select **HTTP trigger (3)**. Click on **Next (4)**.
 
    ![Picture1](../images/functionapp3.png)
@@ -156,7 +156,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Navigate to the **setting** tab of your **GitHub Organization**..
 
-   ![Picture1](../images/ghasr1.png)
+   ![Repository Settings](../images/mod1org.png)
 
 1. Click on **Webhooks** from the left Navigation pane.
 
@@ -179,19 +179,19 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 11. Now go to the **Repositories** section and click on **New Respsitories**.
 
-    ![Picture1](../images/newrepo.png)
+    ![Picture1](../images/newrepoa.png)
 
-12. To create the repositories, name them **Test-webhook (1)** then select **Public** (2) then also ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
+12. To create the repositories, name them **Test-webhook (1)** then select **Public** **(2)** then also ensure to add a **README file** **(3)**. Finally, click on **Create repository** **(4)** to complete the process.
 
     ![Picture1](../images/newrepo1.png)
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
-13. Click on **Add file** (1) (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** (2).
+13. Click on **Add file** **(1)** (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** **(2)**.
 
      ![Picture1](../images/lab7testwebhook1.png)
 
-14. Create a file named **issue-template.md** (1), add the provided code into the file **(2)**, and then click on **Commit changes** (3) to save.
+14. Create a file named **issue-template.md** **(1)**, add the provided code into the file **(2)**, and then click on **Commit changes** **(3)** to save.
 
     ```
     ## Build Failure
@@ -219,7 +219,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/lab7testwebhook5.png)
 
-18. Change the file name of the YAML configuration file to **ci.yml** (1). Paste the provided **code** (2) into this file to define the workflow configuration. Finally, click on **Commit changes** (3) to save the file with these updates.
+18. Change the file name of the YAML configuration file to **ci.yml** **(1)**. Paste the provided **code** **(2)** into this file to define the workflow configuration. Finally, click on **Commit changes** **(3)** to save the file with these updates.
 
 	```
 	name: CI 
@@ -275,15 +275,19 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/lab7testwebhook7.png)
 
-20. Navigate to the **Actions** tab (1) where you'll find that the creation of **ci.yml** (2) failed due to an issue.
+20. Navigate to the **Actions** tab **(1)** where you'll find that the creation of **ci.yml** **(2)** failed due to an issue.
 
      ![Picture1](../images/lab7testwebhook8.png)
 
 13. Navigate back to **your organization**, and click on **settings**.
 
-     ![Picture1](../images/ghasr1.png)
+     ![Repository Settings](../images/mod1org.png)
 
 14. Click on **Webhooks** from the left Navigation pane and select the Webhook you have created.
+
+1. Select the Webhook you have created.
+
+    ![Picture1](../images/recentdeliverya.png)
 
 15. Scroll down to the bottom and you will find some **Recent Deliveries**.
 
@@ -351,3 +355,5 @@ In this lab, you have completed the following:
 + Viewed the security overview dashboard and reports 
 + Reviewed Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 + Talked about repository rulesets and how they can be used at scale 
+
+### You have successfully completed the lab.

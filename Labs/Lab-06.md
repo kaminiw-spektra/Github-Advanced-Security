@@ -38,7 +38,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
 
-   ![Picture1](../images/token1.png)
+   ![Picture1](../images/token1a.png)
 
 1. Give your secret a name **Secret01 (1)** under *Note* field and set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. 
 
@@ -58,15 +58,15 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Click on **Repositories (1)** and select **ghas-bootcamp-javascript (2)**.
 
-   ![Picture1](../images/sec11.png) 
+   ![Picture1](../images/sec11a.png) 
 
 1. In the ghas-bootcamp-javascript repository navigate to **Settings** from the top navigation pane.
 
    ![github-advisory-database](../images/g12.png)
 
-1. From the left navigation pane, click on **Code Security**.
+1. From the left navigation pane, click on **Advanced Security**.
 
-   ![github-advisory-database](../images/image1.png)
+   ![github-advisory-database](../images/image1a.png)
 
 1. Scroll down to **Secret Protection**, where you will see that **Secret Protection** is already enabled, as it has been configured at the organization level.
 
@@ -90,11 +90,11 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/allowsecrett1.png)    
 
-1. Then navigate to the **Security** from the top, expand **Secret Scanning (1)** section and select **Default (2)** to show how this is an active secret. **(3)**
+1. Then navigate to the **Security (1)** from the top, expand **Secret Scanning (2)** section and select **Default (3)** to show how this is an active secret. **(4)**
 
-   ![Picture1](../images/img2.png)
+   ![Picture1](../images/img2a.png)
 
-   > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security** option from the left navigation pane to view the option.
+   > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Advanced Security** option from the left navigation pane to view the option.
    
    > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
@@ -115,9 +115,10 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
-1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Code security** under Securilty. 
-   
-   ![Picture1](../images/img3.png)
+1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Advanced security** under Securilty. 
+
+   ![github-advisory-database](../images/g12.png)
+   ![github-advisory-database](../images/image1a.png)
 
 1. Scroll down to **Push protection** under Secret Protection and click **Enable**.
 
@@ -137,11 +138,11 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. In the Developer Settings page expand **Personal access tokens** **(1)**, click-on **Tokens (classic) (2)**, then click on **Generate new token** **(3)** , and click-on **Generate new token (classic) (4)**.
 
-   ![Picture1](../images/token1.png)
+   ![Picture1](../images/token1b.png)
 
-1. In the New personal access token, provide secret a name, **secret2 (1)**, set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
+1. In the New personal access token, provide secret a name, **Secret02 (1)**, set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
-   ![Picture1](../images/sec12.png)
+   ![Picture1](../images/sec12a.png)
 
 1. Once you've generated the token, click on the **"Copy"** icon to the right of the secret value.
 
@@ -187,9 +188,10 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will create and apply a custom secret pattern to detect specific types of sensitive information. Access the secret scanning settings in the repository and define a new secret pattern, including a name and regular expression, to identify specific secrets. Test the pattern using a known secret and a modified PAT to evaluate its effectiveness. Save and publish the custom pattern, then review the results to see how it identifies secrets based on the pattern.
 
-1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings (1)** tab of the repo, click on **Code security (2)**.
+1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings** tab of the repo, click on **Advanced security**.
 
-   ![](../images/sec14.png)
+   ![github-advisory-database](../images/g12.png)
+   ![github-advisory-database](../images/image1a.png)
 
 1. Scroll down to **Secret Scanning** section and then click on the **New pattern** button.
 
@@ -243,3 +245,4 @@ In this lab, we have completed the following:
  - Created a custom secret pattern
  - Understanding the results 
  
+### You have successfully completed the lab, Click on **Next** to continue.

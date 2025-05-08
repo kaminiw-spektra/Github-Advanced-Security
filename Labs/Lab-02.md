@@ -15,7 +15,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](../images/arch5.PNG)
+![](../images/arch5a.png)
 
 ## Estimated Timing: 20 minutes
 
@@ -114,11 +114,11 @@ Applying the security configuration to all repositories in your organization
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that run tests whenever you push a change to your repository, or that deploy merged pull requests to production. You will learn how to enable GitHub Actions for repositories to ensure workflows run seamlessly. This includes configuring the settings to allow all actions and reusable workflows.
 
-1. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
+1. Select your organization **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
 
-   ![Select Organization](../images/ghas-exercise1-4.png)
+   ![Select Organization](../images/ghas-exercise1-4a.png)
 
-1. Navigate to the repository and click on the **Settings** tab.
+1. Click on the **Settings** tab.
 
    ![Repository Settings](../images/mod1org.png)
 
@@ -151,3 +151,5 @@ In this module, we have completed the following:
 - Applying security settings in your organization
 - Activate Actions for All Repositories
 - Enabled Copilot Autofix for Code Scanning
+
+### You have successfully completed the lab, Click on **Next** to continue.

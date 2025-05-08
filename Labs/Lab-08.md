@@ -45,7 +45,6 @@ In this lab, you will perform:
 
    ![](../images/template2.png)
 
-
 1. Click on **Save as** and select **Published campaign**.
 
    ![](../images/securitycampaign1-2.png)
@@ -74,12 +73,12 @@ In this lab, you will perform:
 
 11. Click on **Ready for review**.
 
-    ![](../images/seccamp5a.png)
+    ![](../images/seccamp5b.png)
 
 12. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
-    ![](../images/seccamp6a.png)
-    ![](../images/seccamp7a.png)
+    ![](../images/seccamp6b.png)
+    ![](../images/seccamp7b.png)
 
 ### Task 2: Tracking Security Campaign
 
@@ -94,7 +93,9 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    ![](../images/a54b.png)
 
-   >**Note:** It will take a few minutes to complete.
+   >**Note:** It will take upto 5-30 minutes to get it complete.
+   
+   >**Note:** If you move to the next alert before completing the previous fix suggestion, you may encounter a message stating that the fix suggestion was discarded due to new code being pushed. In this case, you’ll need to generate the fix again.
 
 2. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **One of the alerts havs been closed**.
 
@@ -102,29 +103,46 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-      1. Click on the open alert as metioned below.
+1. Click on the open alert as metioned below.
 
-         ![](../images/a48.png)
+   ![](../images/a48.png)
 
-      1. On the selected alert page click on **Generate fix** and once it is completed click on **Commit to new branch**
+1. On the selected alert page click on **Commit to new branch**.
 
-         ![](../images/a49a.png)
+   ![](../images/a49a.png)
 
-      1. Now try refreshing the page.
+   >**Note:** There is a chance that the option to **Commit to new branch** may not appear. In this case, look for the **Generate Fix** option, click on it, and once the fix is generated, you will be able to commit.
 
-      1. Now you can see that the alert has been closed.
+1. Select the option to open a pull request, then click **Commit changes**.
 
-         ![](../images/a51a.png)
+    ![](../images/seccamp4a.png)
 
-         ![](../images/a51.png)
+1. Click on **Ready for review**.
 
-         > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update. Refresh the page after a few minutes.
+    ![](../images/seccamp5b.png)
 
-      1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. 
+1. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
-         ![](../images/a52.png)
+    ![](../images/seccamp6b.png)
+    ![](../images/seccamp7b.png)
 
-         ![](../images/a53a.png)
+1. Now try refreshing the page.
+
+1. Now you can see that the alert has been closed.
+
+   ![](../images/a51a.png)
+
+   ![](../images/a51.png)
+
+   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a 5-30 minutes to update. Refresh the page to get recent update.
+
+1. Now, click on the remaining **alert** and follow the same steps as before to generate a fix.
+
+   ![](../images/a52.png)
+
+   > **Note:** There is a chance also you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. It entirely depends on the type of alert and whether GitHub Copilot is capable of generating a fix for it.
+
+   ![](../images/a53a.png)
 
 ### Task 3: Editing and Managing Security Campigns
 
@@ -159,3 +177,5 @@ In this lab you have completed the following:
 - Created a campaign from a template
 - Tracked Security Campaigns
 - Edited and Managed Security Campigns
+
+### You have successfully completed the lab, Click on **Next** to continue.
