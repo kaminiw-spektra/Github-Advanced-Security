@@ -15,6 +15,10 @@ In this lab, you will learn and perform:
 - Task 3: Run a code scan
 - Task 4: Apply autofixes to vulnerabilities
 
+## Architecture Diagram
+
+![](../images/arch15a.png)
+
 ## Estimated timing: 90 minutes
    
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  

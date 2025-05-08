@@ -23,7 +23,7 @@ In this lab, you will perform:
 
 1. Select the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization from the top.
 
-   ![](../images/a41a.png)
+   ![](../images/a41.png)
 
 1. Navigate to your repository’s **Security** tab.
 
@@ -93,7 +93,9 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    ![](../images/a54b.png)
 
-   >**Note:** It will take a few minutes to complete.
+   >**Note:** It will take upto 5-30 minutes to get it complete.
+   
+   >**Note:** If you move to the next alert before completing the previous fix suggestion, you may encounter a message stating that the fix suggestion was discarded due to new code being pushed. In this case, you’ll need to generate the fix again.
 
 2. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **One of the alerts havs been closed**.
 
@@ -132,11 +134,13 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    ![](../images/a51.png)
 
-   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update. Refresh the page after a few minutes.
+   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a 5-30 minutes to update. Refresh the page to get recent update.
 
-1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. 
+1. Now, click on the remaining **alert** and follow the same steps as before to generate a fix.
 
    ![](../images/a52.png)
+
+   > **Note:** There is a chance also you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. It entirely depends on the type of alert and whether GitHub Copilot is capable of generating a fix for it.
 
    ![](../images/a53a.png)
 

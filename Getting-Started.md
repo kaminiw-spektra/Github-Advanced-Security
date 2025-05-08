@@ -9,11 +9,16 @@ You'll enable secret scanning with push protection, create custom secret pattern
 
 ## Objective
 
-By the end of this lab, you will be able to:
+- **Dependency Scanning:** Enable dependency scanning to analyze project dependencies and identify known vulnerabilities in open-source libraries or third-party packages. This ensures your codebase remains secure by alerting you to outdated or vulnerable packages that need to be updated or replaced.
 
-- **Use your own data with Azure OpenAI**: This hands-on exercise aims to provision an Azure OpenAI resource and deploy a model, observing its normal chat behavior initially. You will then connect your data, interact with the model using this data, set up and configure an application in Cloud Shell, and run it to test its functionality.
-- **Explore content filters in Azure OpenAI**: This hands-on exercise aims to deploy an OpenAI model to generate natural language output and explore content filters to ensure the generated content meets desired standards. The content filtering system recognizes and responds to particular types of potentially dangerous content in input prompts and output completions.
-  
+- **Secret Scanning:**: Implement secret scanning to automatically detect and alert on accidentally committed sensitive information such as API keys, passwords, or tokens. This helps prevent credential leaks and ensures sensitive data is never exposed in your repositories, reducing the risk of unauthorized access.
+
+- **Code Scanning:**: Leverage advanced static code analysis to detect security vulnerabilities, coding errors, and potential exploits in your source code it helps to create a proactive approach towards security, reduce the potential impact of security threats, enhance the quality of code as well as speeding up the software development life cycle through minimizing time spent resolving post deployment issues.
+
+- **Security Campaigns:** To help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
+
+- **Azure Function App:** An Azure Function App is used to handle incoming events triggered by a GitHub webhook. When specific actions occur in a GitHub repository—such as pushes or pull requests—the webhook sends an HTTP request to the Function App. This enables automated processing, such as logging, validation, or integration with other services, making it a lightweight and scalable solution for responding to GitHub activity in real time.
+
 ## Pre-requisites
 
 - Basic knowledge of GitHub
@@ -22,19 +27,29 @@ By the end of this lab, you will be able to:
 
 ## Architecture
 
-The architecture flow involves using the Azure OpenAI Service to integrate your data with a large language model (LLM), allowing you to manage how the model interacts with your information by focusing on specific topics or blending it with pre-trained results. The service employs default content filters to detect and remove harmful content, and you can also apply custom filters tailored to your needs. This approach ensures that content filtering is effectively used to uphold responsible AI practices, providing insights into its role in maintaining secure and safe interactions.
+In this hands-on lab, the architecture flow highlights key components of GitHub Advanced Security (GHAS) and its integration into the development workflow. It begins with an overview of GHAS and enabling essential security configurations at the organization level. The lab then explores core GHAS features, including Dependabot for dependency management, Secret Scanning for protecting sensitive information, and code scanning and vulnerability detection. Software Composition Analysis is used to assess open-source risks, while security campaigns drive consistent adoption across teams. The lab concludes with scaling GHAS implementation using a Function App, triggered via GitHub webhooks, to support automation and organization-wide security enforcement.
 
 ## Architecture Diagram
 
-  ![](../media/arch15.PNG)
+   ![](./images/arch15.png)
 
 ## Explanation of Components
 
-1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
-1. **Azure OpenAI Models**: Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
-1. **Azure CloudShell**: Azure CloudShell offers an integrated, browser-based shell experience for managing Azure resources. It provides a ready-to-use environment with pre-installed tools and access to both Bash and PowerShell.
-1. **Storage Account**: Manages and stores data, providing scalable and secure cloud storage solutions.
-1. **Content Filter**: Detects and removes harmful content to ensure safe and responsible AI interactions.
+1. **GitHub Secret Protection**, which includes features that help you detect and prevent secret leaks, such as secret scanning and push protection.
+
+1. **GitHub Code Security**, which includes features that help you find and fix vulnerabilities, like code scanning, premium Dependabot features, and dependency review.
+
+1. **Secret Scanning:** Detect secrets, for example keys and tokens, that have been checked into a repository and receive alerts.
+
+2. **Code Scanning:** Search for potential security vulnerabilities and coding errors in your code using CodeQL or a third-party tool.
+
+3. **Dependabot:** Dependabot is an automated dependency management tool that ensures a constant update of project dependencies. Dependabot keeps the development environment safe and steady by fixing bugs found in outdated dependencies.
+
+1. **Copilot Autofix:** Get automatically generated fixes for code scanning alerts.
+
+1. **Security campaigns:** Reduce security debt at scale.
+
+1. **Function App:** It is a serverless compute service that enables you to run event-driven code without managing infrastructure. It automatically scales and executes functions in response to triggers like HTTP requests, timers, or webhooks.
 
 ## Getting Started with the Lab
 ## Accessing Your Lab

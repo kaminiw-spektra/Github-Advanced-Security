@@ -12,7 +12,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](../images/arch6.PNG)
+![](../images/arch6.png)
 
 ## Estimated Timing: 40 minutes
 

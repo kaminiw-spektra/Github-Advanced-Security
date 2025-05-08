@@ -15,7 +15,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](../images/arch5.PNG)
+![](../images/arch5a.png)
 
 ## Estimated Timing: 20 minutes
 
