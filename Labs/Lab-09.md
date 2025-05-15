@@ -148,7 +148,35 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    > **Note :** If you get any **error message**, **refresh** the page and the function which you created will be present under the functions tab in the overview page.
 
-1. Under the **Function** tab, you can see the created Function. Click on it.   
+1. Under the **Function** tab, you can see the created Function. Click on it.
+
+    ![Picture1](../images/fuctionabc.png)
+
+1. Now, click on the **Invocations** tab — it should appear as shown in the image below.
+
+    ![Picture1](../images/functionabd.png)
+
+   > **Note:** If you see the option **"Configure Application Insights to capture invocation logs"**, follow the steps below. If not, proceed to **Step 13**.
+
+     ![Picture1](../images/functionabf.png)
+
+   1. Click on **Configure** to enable invocation log capture.
+
+   2. Select **Turn on Application Insights**.
+
+      ![Picture1](../images/functionabe.png)
+
+   3. Scroll down and choose the existing **Log Analytics Workspace**.
+
+      ![Picture1](../images/functionabg.png)
+
+   4. Click **Apply**, then confirm by clicking **Yes** to apply the monitoring settings.
+
+      ![Picture1](../images/functionabh.png)
+
+   5. Wait for the configuration to complete. Then, go back to your **HttpTrigger1** function and open the **Invocations** tab — you should now see it is configured.
+
+      ![Picture1](../images/functionabd.png)
 
 1. Go to the **Developer** section of your **HttpTrigger** function, click on **Code + Test (1)**, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
    
