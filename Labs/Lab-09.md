@@ -106,6 +106,10 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
  
       ![Enter Your Password](../images/login2.png)
 
+1. On the **Stay signed in?** pop-up, click on **No**.
+
+      > **Note**: If prompted with MFA, please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible), If you're already logged in to the Azure Portal, there's no need to perform this step — you can proceed to the next one.   
+
 1. In the search bar of the Azure portal, type **Function app (1)**. From the search results, select **Function App (2)**.
 
    ![Picture1](../images/functionapp.png)
@@ -374,6 +378,35 @@ You can create rulesets to control how users interact with selected branches and
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
 For more details, refer to the [GitHub documentation on rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+
+## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
+
+   > **Note:** These are the steps to enable MFA if it is enforced during login to the Azure portal. If you've already logged in successfully, you can skip this step. Otherwise, enable MFA and then continue from where you left off. 
+
+1. At the **"More information required"** prompt, select **Next**.
+
+1. On the **"Keep your account secure"** page, select **Next** twice.
+
+1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+
+   - Open **Google Play Store** (Android) or **App Store** (iOS).
+   - Search for **Microsoft Authenticator** and tap **Install**.
+   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
+
+1. A **QR code** will be displayed on your computer screen.
+
+1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+
+1. After scanning, click **Next** to proceed.
+
+1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
+       
+1. If prompted to stay signed in, you can click **No**.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+ 
+1. Now, click on the **Next** from the lower right corner to move to the next page.
+
 
 ## Review
 
