@@ -21,6 +21,61 @@ GitHub Advanced Security is an integrated security suite tailored to enhance you
 
 Here are some of the components of GitHub Advanced Security:
 
+1. **GitHub Secret Protection:** Secret Protection includes the following features to help you detect and prevent secret leaks, allowing continuous monitoring and detection. You will have the following features with GitHub Secret Protection:
+
+   - **Secret scanning:** Detect secrets, for example keys and tokens, that have been checked into a repository and receive alerts.
+
+   - **Push protection:** Push protection for users automatically protects you from accidentally committing secrets to public repositories, regardless of whether the repository itself has secret scanning enabled. Push protection for users is on by default, but you can disable the feature at any time through your personal account settings.
+
+   - **Copilot secret scanning:** Copilot secret scanning's generic secret detection is an AI-powered expansion of secret scanning that identifies unstructured secrets (passwords) in your source code and then generates an alert.
+
+   - **Custom patterns:** You can define custom patterns to identify secrets that are not detected by the default patterns supported by secret scanning, such as patterns that are internal to your organization.
+
+   - **Delegated bypass for push protection and Delegated alert dismissal:** Implement an approval process for better control over who in your enterprise can perform sensitive actions, supporting governance at scale.
+
+   - **Security overview:** Security overview allows you to review the overall security landscape of your organization, view trends and other insights, and manage security configurations, making it easy to monitor your organization's security status and identify the repositories and organizations at greatest risk
+
+- The table below summarizes the availability of **GitHub Secret Protection** features for public and private repositories.
+
+   | Feature                              | Public repository without GitHub Secret Protection | Private repository without GitHub Secret Protection | Public or private repository with GitHub Secret Protection |
+   |--------------------------------------|----------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
+   | Secret scanning                      | ✓                                                  | ✗                                                   | ✓                                                           |
+   | Push protection                      | ✓                                                  | ✗                                                   | ✓                                                           |
+   | Copilot secret scanning              | ✗                                                  | ✗                                                   | ✓                                                           |
+   | Custom patterns                      | ✗                                                  | ✗                                                   | ✓                                                           |
+   | Delegated bypass for push protection | ✗                                                  | ✗                                                   | ✓                                                           |
+   | Security overview                    | ✗                                                  | ✗                                                   | ✓                                                           |
+
+2. **GitHub Code Security:** includes features that help you find and fix vulnerabilities, like code scanning, premium Dependabot features, and dependency review. It enables automated analysis of your code and dependencies to detect security issues early in the development lifecycle.
+
+   - **Code scanning:** Search for potential security vulnerabilities and coding errors in your code using CodeQL or a third-party tool.
+
+   - **CodeQL CLI:** Run CodeQL processes locally on software projects or to generate code scanning results for upload to GitHub.
+
+   - **Copilot Autofix:** Get automatically generated fixes for code scanning alerts.
+
+   - **Security campaigns:** Fix security alerts at scale by creating security campaigns and collaborating with developers to reduce your security backlog. 
+
+   - **Custom auto-triage rules for Dependabot:** Manage your Dependabot alerts at scale, by automating which alerts you want to ignore, snooze, or trigger a Dependabot security update for.
+
+   - **Dependency review:** Show the full impact of changes to dependencies and see details of any vulnerable versions before you merge a pull request.
+
+   - **Security overview:** Security overview allows you to review the overall security landscape of your organization, view trends and other insights, and manage security configurations, making it easy to monitor your organization's security status and identify the repositories and organizations at greatest risk. 
+
+- The table below summarizes the availability of **GitHub Code Security** features for public and private repositories.
+
+   | Feature                     | Public repository without GitHub Secret Protection | Private repository without GitHub Code Security | Public or private repository with GitHub Code Security |
+   |-----------------------------|----------------------------------------------------|-------------------------------------------------|--------------------------------------------------------|
+   | Code scanning               | ✓                                                  | ✗                                               | ✓                                                      |
+   | CodeQL CLI                  | ✓                                                  | ✗                                               | ✓                                                      |
+   | Copilot Autofix             | ✓                                                  | ✗                                               | ✓                                                      |
+   | Security campaigns          | ✗                                                  | ✗                                               | ✓                                                      |
+   | Custom auto-triage rules    | ✗                                                  | ✗                                               | ✓                                                      |
+   | Dependency review           | ✗                                                  | ✗                                               | ✓                                                      |
+   | Security overview           | ✗                                                  | ✗                                               | ✓                                                      |
+
+Here is some additional information on Secret Scanning, Code Scanning, and Dependabot.
+
 1. **Secret Scanning:** The secret scanning is a critical security mechanism present in the GitHub Advanced Security that helps automate the detection and mitigation of inadvertent exposure of sensitive information like API keys, tokens in the source code.
 
     To prevent unauthorized access and protect confidential information. Secret scanning searches for known patterns and signatures of sensitive information and ensures that responsible parties rectify potential vulnerabilities. By default, secret scanning uses highly reliable patterns from a GitHub partner. However, custom patterns can be created for other use cases. Custom patterns can be defined as patterns that secret scanning is programmed to detect irrespective of its default pattern. We can define custom patterns for our enterprise, organization or repository.
@@ -44,6 +99,22 @@ Here are some of the components of GitHub Advanced Security:
     GitHub Advanced Security also extends the ability of Dependabot; this means it can review dependencies too. Hence you can readily identify vulnerable components within your pull request. The advantage of this check is also detecting weaknesses before they merge into shared branches.
 
    Refer to the link for more information. [Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
+
+### Why should enable Secret Protection for organization's repositories.
+
+GitHub recommends enabling GitHub Secret Protection products for all repositories, in order to protect your organization from the risk of secret leaks and exposures. GitHub Secret Protection is free to enable for public repositories, and available as a purchasable add-on for private and internal repositories.
+
+- The free secret risk assessment scans only the code in your organization, including the code in archived repositories. You can extend the surface being scanned to cover content in pull requests, issues, wikis, and GitHub Discussions with GitHub Secret Protection.
+
+- The secret risk assessment and secret scanning scan code that has already been committed into your repositories. With push protection, your code is scanned for secrets before commits are saved on GitHub, during the push process, and the push is blocked if any secrets are detected.
+
+- If you have one or more secret patterns that are internal to your organization, these will not be detected by the default patterns supported by secret scanning. You can define custom patterns that are only valid in your organization, and extend the secret scanning capabilities to detect these patterns.
+
+- Knowing which secrets could be exploited makes it easy to prioritize remediation of leaked secrets found by secret scanning. Validity checks tell you if an active secret is one that could still be exploited, so these alerts should be reviewed and remediated as a priority.
+
+- You may also want to detect leaks of unstructured secrets such as passwords. This is possible with our AI-powered Copilot secret scanning.
+
+- Visualizing the prevention, detection, and remediation of security data is critical to understanding where to direct effort and where security initiatives are having an impact. Security overview has dedicated views that allow you to dig deep into the current state of your codebases at the organization and enterprise level.
 
 ### Security Updates
 
