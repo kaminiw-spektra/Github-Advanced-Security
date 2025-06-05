@@ -86,6 +86,8 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/a38a.png)
 
+   ![Code Security Configurations](../images/a38b.png)
+
 1. You will find that the organization configurations for **Security_settings_enable** are enforced on 4 repositories.
 
    ![Code Security Configurations](../images/a39a.png)
