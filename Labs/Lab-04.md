@@ -24,7 +24,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
 
-   ![github-advisory-database](../images/g2.1.png)
+   ![github-advisory-database](../images/g2.1a.png)
 
    ![github-advisory-database](../images/g3atz.png)
  
