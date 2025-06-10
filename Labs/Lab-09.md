@@ -92,7 +92,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 ### Push events to an outside reporting function in the App.
 
-1. Open a new tab in your browser and navigate to the Azure Portal at `https://portal.azure.com`.
+1. Open a **new InPrivate (Incognito) tab** in your browser and navigate to the Azure Portal at `https://portal.azure.com`.
+
+   >**Note:** Please ensure you open a **new InPrivate (Incognito)** browser tab before logging into the Azure Portal to avoid session or credential conflicts.
 
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
@@ -160,7 +162,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](../images/functionabd.png)
 
-   > **Note:** If you see the option **"Configure Application Insights to capture invocation logs"**, follow the steps below. If not, proceed to **Step 13**.
+   > **Note:** If you see the option **"Configure Application Insights to capture invocation logs"**, follow the steps below. If not, proceed to **Step 14**.
 
      ![Picture1](../images/functionabf.png)
 
