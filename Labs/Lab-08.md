@@ -25,7 +25,7 @@ In this lab, you will perform:
 
    ![](../images/a41.png)
 
-1. Navigate to your repository’s **Security** tab.
+1. Navigate to your organization's **Security** tab.
 
    ![Picture1](../images/security-tabat.png)
 
