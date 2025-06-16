@@ -149,17 +149,26 @@ GitHub Advanced Security provides a comprehensive set of tools to help you build
 
 Ghas helps identify and address weaknesses in the development process. By integrating the security check directly into their growth work, it ensures that possible dangers are trapped before being caught. This active approach reduces the risk of security breach and helps maintain the integrity of the code base.
 
+GitHub Advanced Security (GHAS) helps identify and mitigate vulnerabilities early in the software development lifecycle. By integrating security scans directly into the CI/CD pipeline, it ensures real-time feedback for developers. This proactive approach enhances team awareness and encourages a culture of security across the entire development team. It prevents risky code from entering production, minimizing the likelihood of security breaches in live systems.
+
 ### Automated procedures
 
 Automation with GHAS is a great advantage. Features such as code scan monitor their code for constant weaknesses and chronic addiction. This protects automation developers from time and effort, so they can focus on writing code instead of manually checking for security problems. Automatic security control also ensures continuity and perfection and reduces the possibility of human error.
+
+Automation with GHAS eliminates the need for manual code security reviews. Tools like CodeQL automatically detect and flag vulnerabilities, reducing turnaround time for fixes. This allows development teams to prioritize and remediate issues with minimal disruption to their workflows. It also ensures that no new changes compromise the security posture of the application.
+
 
 ### Compliance and Governance
 
 GHAS helps organizations to meet various safety standards and compliance requirements. By offering equipment to implement security policy and track compliance, it ensures that your code industry follows the best practices and regulatory requirements. This is especially important for organizations in regulated industries, where not following security standards can cause significant punishment.
 
+GHAS supports enforcement of security policies through configuration-as-code and rule-based access controls. It offers auditing features and logs that provide visibility into code changes and policy enforcement. This helps in demonstrating due diligence during security audits or regulatory reviews.
+
 ### Better Code Quality
 
 Regular scanning and reviews lead to cleaner, safe code. By quickly identifying and fixing weaknesses and code errors, Ghas helps maintain high code quality. This not only improves the security of your applications, but also increases their general performance and reliability. It is easy to understand, maintain, maintain and expand the clean, well maintained code, leading to more efficient growth processes.
+
+Frequent scanning helps catch bugs and bad practices before they become systemic issues. Security tools encourage writing modular, reusable, and defensible code by promoting safe coding patterns. Improved code quality also reduces technical debt, which in turn makes future development and scaling easier. Developers become more mindful of their coding habits, resulting in fewer regressions and stronger software foundations.
 
 Please feel free to go through the links for further understanding:
 
