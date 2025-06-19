@@ -139,7 +139,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
    - Click on the latest run of the CodeQL workflow to view the details.
    - Check the results to see if any vulnerabilities were identified.
 
-     ![](../images/resulta.png) 
+     ![](../images/resultas.png) 
 
      > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
