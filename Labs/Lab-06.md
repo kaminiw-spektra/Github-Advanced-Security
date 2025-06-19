@@ -193,9 +193,9 @@ In this task, you will create and apply a custom secret pattern to detect specif
    ![github-advisory-database](../images/g12.png)
    ![github-advisory-database](../images/image1a.png)
 
-1. Scroll down to **Secret Scanning** section and then click on the **New pattern** button.
+1. Scroll down to **Secret Protection** section and then click on the **New pattern** button.
 
-    ![new-pattern-repository](../images/secret-scanning4.png)
+   ![new-pattern-repository](../images/secret-scanning4a.png)
 
 1. In New custom pattern, proivde following details and click **Save and dry run** **(7)** to discover two values of concern - the first being the GitHub Personal Access Token we corrupted earlier, and the second being the `Password123!` value mentioned earlier. 
 

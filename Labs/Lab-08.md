@@ -69,7 +69,7 @@ In this lab, you will perform:
 
 10. Select the option to open a pull request, then click **Commit changes**.
 
-    ![](../images/seccamp4a.png)
+    ![](../images/seccamp4ab.png)
 
 11. Click on **Ready for review**.
 
@@ -134,7 +134,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    ![](../images/a51.png)
 
-   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a 5-30 minutes to update. Refresh the page to get recent update.
+   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a **5-30 minutes** to update. Refresh the page to get recent update.
 
 1. Now, click on the remaining **alert** and follow the same steps as before to generate a fix.
 
