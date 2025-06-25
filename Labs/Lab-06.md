@@ -42,6 +42,8 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Give your secret a name **Secret01 (1)** under *Note* field and set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. 
 
+   >**Note:** If **Secret01** and **Secret02** already exist, delete them and recreate the secrets.
+
    ![new personal acess token](../images/sec10.png)
 
 1. Once you've generated the token, click the **Copy** icon to the right of the secret value.
