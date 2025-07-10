@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 ### Task 1: Creating Security Camapaign
 
-**Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/ja/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
+**Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
 
 1. Select the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization from the top.
 
@@ -167,9 +167,10 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
 
 - **Close campaign** to remove it from the active campaigns list and display it on the Closed campaigns view.
+
 - **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
 
-   ![](../images/seccamp11a.png)
+   ![](../images/T3S6.png)
 
 ## Review
 In this lab you have completed the following:
