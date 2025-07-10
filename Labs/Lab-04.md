@@ -24,13 +24,13 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
 
-   ![github-advisory-database](../images/g2.1a.png)
+   ![github-advisory-database](../images/T1S1i.png)
 
-   ![github-advisory-database](../images/g3atz.png)
+   ![github-advisory-database](../images/T1S1ii.png)
  
 1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
    
-   ![github-advisory-database](../images/g4.png)
+   ![github-advisory-database](../images/T1S2.png)
 
 1. In the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **#** as shown in the below screenshot and click on **Commit Changes** in the top right corner.
 
@@ -88,11 +88,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. If prompted, click on **Commit Changes** once again in the pop-up that appears.
 
-   ![github-advisory-database](../images/g8.png)
+   ![github-advisory-database](../images/T1S5i.png)
 
 1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
-   ![github-advisory-database](../images/g9.png)
+   ![github-advisory-database](../images/T1S6.png)
    
 1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot by clicking on the pencil icon and delete the existing lines as mentioned.
 
@@ -114,11 +114,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
 
-   ![github-advisory-database](../images/proposechanges.png)
+   ![github-advisory-database](../images/T1S8.png)
 
 1. Click on **Create pull request**. 
 
-   ![github-advisory-database](../images/createpr.png)
+   ![github-advisory-database](../images/T1S9.png)
 
 1. On the **Open a pull request** tab, click on **Create pull request**. No need to merge the PR.   
 

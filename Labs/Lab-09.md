@@ -64,13 +64,13 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](../images/org.png) 
      
-1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from **organizations**.
+1. Select **ghas-bootcamp-xxxx-xx-xx-** from **organizations**.
 
    ![Picture1](../images/org-new1.png) 
 
 1. Navigate to the **security** tab of your **GitHub Organization**.
 
-   ![Picture1](../images/g5c.png)
+   ![Picture1](../images/T2S3.png)
 
 1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
@@ -134,7 +134,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Version** | **20 LTS (6)** |
     | **Region** | **East US (7)** |
 
-   ![Picture1](../images/sec17-1.png)
+   ![Picture1](../images/T3S8.png)
 
      >**Note:** Keep rest of the options as default.
 
@@ -150,7 +150,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. On Template details page, leave the default options and click on **Create**.
 
-   ![Picture1](../images/mod5functionapp3.png)
+   ![Picture1](../images/T3S10.png)
 
    > **Note :** If you get any **error message**, **refresh** the page and the function which you created will be present under the functions tab in the overview page.
 
@@ -160,7 +160,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Now, click on the **Invocations** tab — it should appear as shown in the image below.
 
-    ![Picture1](../images/functionabd.png)
+    ![Picture1](../images/T3S13.png)
 
    > **Note:** If you see the option **"Configure Application Insights to capture invocation logs"**, follow the steps below. If not, proceed to **Step 14**.
 
@@ -190,11 +190,11 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Navigate to the **setting** tab of your **GitHub Organization**..
 
-   ![Repository Settings](../images/mod1org.png)
+   ![Repository Settings](../images/T3S15.png)
 
 1. Click on **Webhooks** from the left Navigation pane.
 
-   ![Picture1](../images/webhook1.png)
+   ![Picture1](../images/T3S16.png)
 
 1. Click on **Add Webhooks** and give your GitHub password.
 
@@ -207,23 +207,23 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
-      ![Picture1](../images/payload1.png)
+      ![Picture1](../images/T3S18.png)
 
       >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
 
 11. Now go to the **Repositories** section and click on **New Respsitories**.
 
-    ![Picture1](../images/newrepoa.png)
+    ![Picture1](../images/T3S19.png)
 
 12. To create the repositories, name them **Test-webhook (1)** then select **Public** **(2)** then also ensure to add a **README file** **(3)**. Finally, click on **Create repository** **(4)** to complete the process.
 
-    ![Picture1](../images/newrepo1.png)
+    ![Picture1](../images/T3S20.png)
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
 13. Click on **Add file** **(1)** (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** **(2)**.
 
-     ![Picture1](../images/lab7testwebhook1.png)
+     ![Picture1](../images/T3S21.png)
 
 14. Create a file named **issue-template.md** **(1)**, add the provided code into the file **(2)**, and then click on **Commit changes** **(3)** to save.
 
@@ -239,7 +239,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     See the attached logs for more details.
     ```
 
-     ![Picture1](../images/lab7testwebhook2.png)
+     ![Picture1](../images/T3S22.png)
 
 15. **Commit changes** the new file to your repository.
 
@@ -247,7 +247,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 16. Navigate to the **Actions** tab to view and manage your GitHub Actions workflows.
 
-     ![Picture1](../images/lab7testwebhook4.png)
+     ![Picture1](../images/T3S24.png)
 
 17. On the **Get Started with GitHub Actions** page, click on the **Configure** button for **Simple workflow** to begin setting up a workflow.
 
@@ -303,7 +303,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 	 
 	```
 
-     ![Picture1](../images/lab7testwebhook6.png)
+     ![Picture1](../images/T3S26.png)
 
 19. **Commit changes** the new file to your repository.
 
@@ -315,7 +315,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 13. Navigate back to **your organization**, and click on **settings**.
 
-     ![Repository Settings](../images/mod1org.png)
+     ![Repository Settings](../images/T3S15.png)
 
 14. Click on **Webhooks** from the left Navigation pane and select the Webhook you have created.
 
@@ -363,14 +363,15 @@ You can create rulesets to control how users interact with selected branches and
 
 1. In the left sidebar, under **Code and automation (1)** click **Rules (2)** and then click on **Rulesets (3)**.
 
-   ![Picture1](../images/sec7.png)    
+   ![Picture1](../images/T4S4.png)    
 
 1. You can create a ruleset targeting branches, or a ruleset targeting tags.
 
    - To create a ruleset targeting branches, click on **New branch ruleset**.
    - To create a ruleset targeting tags, select **New tag ruleset**.
+   - To create a rule set targetting specific scope of the rule to which repos, orgs, or branches it should apply, select **New push ruleset**.
 
-      ![Picture1](../images/rulesetbranch.png)  
+      ![Picture1](../images/T4S5.png)  
   
 1. In the **"General"** section, type a name for the ruleset, then select **Disabled**  and click one of the following enforcement statuses:
 

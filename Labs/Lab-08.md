@@ -21,9 +21,9 @@ In this lab, you will perform:
 
 **Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/ja/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
 
-1. Select the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization from the top.
+1. Select the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization from the top.
 
-   ![](../images/a41.png)
+   ![](../images/T1S1iii.png)
 
 1. Navigate to your organization's **Security** tab.
 
@@ -31,7 +31,7 @@ In this lab, you will perform:
 
 1. In the left sidebar, click on the **Campaigns (1)**, click on **Create campaign (2)** and select **From template (3)**.
 
-    ![](../images/securitycampaign1-1.png)
+    ![](../images/T1S3.png)
 
 1. Choose **Critical CodeQL Alert** template to use for the campaign.
 
@@ -43,19 +43,19 @@ In this lab, you will perform:
 
    - **Cross-Site Scripting (CWE-79):** It involves injecting malicious scripts into web pages viewed by other users. This can lead to data theft, session hijacking, or defacement. Preventing XSS involves proper input validation, output encoding, and using security frameworks that automatically handle these issues78.
 
-   ![](../images/template2.png)
+   ![](../images/T1S4i.png)
 
 1. Click on **Save as** and select **Published campaign**.
 
-   ![](../images/securitycampaign1-2.png)
+   ![](../images/T1S5iii.png)
 
 1. Edit the **Campaign name** and **Short description**, define a **Campaign due date**, assign a **Campaign manager** as the primary contact, and finally, click **Create campaign** to initiate it.
 
-    ![](../images/seccamp1a-1.png)
+    ![](../images/T1S6i.png)
 
 8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **ghas-bootcamp-WebGoat** to view its alerts.
 
-    ![](../images/a42a-1.png)
+    ![](../images/T1S7i.png)
 
 1. Now, click on the first **Server-Side request forgery** issue.
 
@@ -77,8 +77,8 @@ In this lab, you will perform:
 
 12. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
-    ![](../images/seccamp6b.png)
-    ![](../images/seccamp7b.png)
+    ![](../images/T1S12iii.png)
+    ![](../images/T1S12ii.png)
 
 ### Task 2: Tracking Security Campaign
 
@@ -124,7 +124,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 1. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
     ![](../images/seccamp6b.png)
-    ![](../images/seccamp7b.png)
+    ![](../images/T2S7.png)
 
 1. Now try refreshing the page.
 
@@ -162,7 +162,7 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
 1. In the **Edit Campaign** section, you can update the **Campaign name**, **Short description**, **Campaign due date**, and **Campaign manager**. Once done, click on **Save changes** to apply the updates.
 
-   ![](../images/seccamp10.png)
+   ![](../images/T3S5.png)
 
 1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
 
