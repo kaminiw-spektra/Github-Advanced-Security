@@ -29,23 +29,23 @@ Applying the security configuration to all repositories in your organization
 
 1. On the **Home** page, click on your profile icon in the top right corner.
 
-   ![Profile Menu](../images/orgprofile.png)
+   ![Profile Menu](../images/T1S1.png)
 
 1. Select **Your organizations** from the dropdown menu.
 
-   ![Your Organizations](../images/org.png)
+   ![Your Organizations](../images/T1S5.png)
 
-1. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
+1. Choose **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from the list of organizations.
 
    ![Select Organization](../images/ghas-exercise1-4.png)
 
 1. Click on the **Settings** tab.
 
-   ![Repository Settings](../images/mod1org.png)
+   ![Repository Settings](../images/T1S4.png)
 
 1. In the Settings menu, click-on **Configurations** under Advanced Security from the Security section.
 
-   ![Code Security Configurations](../images/mod1org1-1.png)
+   ![Code Security Configurations](../images/T1S5ii.png)
 
 1. Click on **New Configuration** to start creating a new security configuration for the repository.
 
@@ -94,9 +94,9 @@ Applying the security configuration to all repositories in your organization
 
    >**Note:** If it’s not visible, please refresh your page.
 
-1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization, click on **Repositories** from the top navigation pane.
+1. In the **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** organization, click on **Repositories** from the top navigation pane.
 
-   ![github-advisory-database](../images/new-repo.png)
+   ![github-advisory-database](../images/T1S16.png)
 
 1. From the list of repositories, click on **ghas-bootcamp-WebGoat** to begin working through this module. 
 
@@ -108,7 +108,7 @@ Applying the security configuration to all repositories in your organization
 
 1. Here, you can review your alerts in the security overview.
 
-   ![Picture1](../images/advance-scanning6atn.png)
+   ![Picture1](../images/T1S19.png)
 
    >**Note:** Here, you will find that the security features are enabled for the repository present in the organization. You will also find this in other repositories, and you are free to check them as well.
 
@@ -116,17 +116,17 @@ Applying the security configuration to all repositories in your organization
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that run tests whenever you push a change to your repository, or that deploy merged pull requests to production. You will learn how to enable GitHub Actions for repositories to ensure workflows run seamlessly. This includes configuring the settings to allow all actions and reusable workflows.
 
-1. Select your organization **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+1. Select your organization **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![Select Organization](../images/ghas-exercise1-4a.png)
+   ![Select Organization](../images/T2S1.png)
 
 1. Click on the **Settings** tab.
 
-   ![Repository Settings](../images/mod1org.png)
+   ![Repository Settings](../images/T1S4.png)
 
 1. In the Settings menu, click-on **General** under **Actions** from the **Code, planning, and automation** section.
 
-   ![Code Security Configurations](../images/mod1org1n.png)
+   ![Code Security Configurations](../images/T2S3i.png)
 
 1. Select **Allow all actions and reusable workflows (1)**, and then click **Save (2)** to apply the changes.
 

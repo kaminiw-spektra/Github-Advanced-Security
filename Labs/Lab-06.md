@@ -34,7 +34,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. To create a GitHub PAT token, go to your profile on top of the right hand, and then select **Settings**.
 
-   ![Picture1](../images/profilesetting.png)
+   ![Picture1](../images/T2S4.png)
 
 1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
 
@@ -52,15 +52,15 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Go to your profile on top of the right hand, and then select **Your organizations**.
 
-   ![Picture1](../images/org.png) 
+   ![Picture1](../images/T1S5.png) 
 
-1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
+1. Select **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from organizations.
 
    ![Picture1](../images/ghas-exercise1-4.png) 
 
 1. Click on **Repositories (1)** and select **ghas-bootcamp-javascript (2)**.
 
-   ![Picture1](../images/sec11a.png) 
+   ![Picture1](../images/T1S7.png) 
 
 1. In the ghas-bootcamp-javascript repository navigate to **Settings** from the top navigation pane.
 
@@ -86,7 +86,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/index.png)
 
-   ![Picture1](../images/index1.png)
+   ![Picture1](../images/T1S12i.png)
 
 1. Click on **Commit changes** and then click on **Commit changes** again to commit directly to default branch.
 
@@ -134,7 +134,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Navigate back to your profile, which is at the top of your right hand, and then select **Settings**.
 
-   ![Picture1](../images/profilesetting.png)
+   ![Picture1](../images/T2S4.png)
 
 1. Scroll down through the left Navigation pane and select **Developer settings**.
 
@@ -158,7 +158,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes by clicking on **Commit changes** with the default options to the attempt to push the code.    
 
-   ![Picture1](../images/sec2.png)
+   ![Picture1](../images/T2S11i.png)
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 8.     
 
@@ -166,15 +166,15 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     >**Note**: This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
 
-    ![push-protection](../images/sscanningpop.png)
+    ![push-protection](../images/T2S11.png)
 
 10. Select the **It's used in tests (1)** check box, click on **Allow secret (2)**, and commit the changes once again to push the code.
 
-    ![push-protection1](../images/commitchanges.png)
+    ![push-protection1](../images/T2S12.png)
 
 11. Navigate to the **Security** -> **Secret Scanning (1)** -> **Default (2)**. Change the finding option to the **Closed (3)** section to demonstrate that this is a secret.
 
-    ![push-protection1](../images/sec13.png)
+    ![push-protection1](../images/T2S13.png)
 
     >**Note:** If it is not visible, please refresh the page once.
 
@@ -208,7 +208,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
    - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
    - **Test string**:  `gH4$kP!2w_ ` **(6)**
 
-     ![push-protection1](../images/mod1.5.png)
+     ![push-protection1](../images/T3S3.png)
       
       > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
       
@@ -218,7 +218,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
 
 1. Click on **Pubish pattern**.
 
-   ![Picture1](../images/publishpattern.png)
+   ![Picture1](../images/T3S4.png)
 
    >**Note:** Please click **reload** if you are unable to see the **Publish pattern**.
 

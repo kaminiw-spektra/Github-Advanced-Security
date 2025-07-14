@@ -27,9 +27,9 @@ In this lab, you will learn and perform:
 
 In this task, you will learn how to enhance CodeQL's security analysis by enabling advanced query configurations and integrating extended security queries. You will gain experience in modifying CodeQL workflows, committing changes related to security vulnerabilities in code, and understanding how CodeQL will accurately identify specific issues, such as clear-text logging of sensitive information, while filtering out less relevant findings. This will depend your understanding of leveraging CodeQL for more precise and effective security scanning in your codebase.
 
-1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
+1. In the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](../images/getrepoa.png)
+   ![github-advisory-database](../images/T1.1S1.png)
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
@@ -47,11 +47,11 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. Click on commit to commit these changes to a **new branch** then click on **Propose changes.**  
  
-   ![github-advisory-database](../images/go.png)
+   ![github-advisory-database](../images/T1.1S6.png)
 
 1. Open a *Pull request* into the **main** branch, click on **Create pull request.**
 
-   ![github-advisory-database](../images/gp.png)
+   ![github-advisory-database](../images/T1.1S7.png)
 
 1. It may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
    
@@ -171,11 +171,11 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 5. Make sure to merge and pull the request.
 
-   ![](../images/Mergea.png) 
+   ![](../images/T4S6.png) 
 
 6. Autofix generates an updated text, just click **Confirm merge**.
 
-   ![](../images/confirmmerge1a.png) 
+   ![](../images/T4S7.png) 
 
    > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
 
