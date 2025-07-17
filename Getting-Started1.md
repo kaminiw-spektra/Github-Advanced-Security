@@ -100,41 +100,43 @@ has a context menu.
    https://github.com/login
    ```
 
-2. In the sign-in to GitHub page in the Edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
+1. On the **Sign in to GitHub** tab, you will see the login screen.
 
-   ![Picture1](./images/github.png)
+    - Enter your **GitHub username** **(1)** as:
+    
+      ```
+      <inject key="GitHub User Name" enableCopy="true"/>
+      ```
+    
+    - Click on **Sign in with your identity provider** **(2)** to continue .
 
-   >**Note:** Make sure to use the **GitHub credentials** allotted to you from the environment details page of your lab.
-   
-   >**Note:** Navigate to the **Environment** tab to view the key-value pairs of the **GitHub Org User**, and **GitHub Org Password**. You can use the copy buttons under the actions column to have the values copied instantly. Alternatively, it is suggested to have the values copied over onto a notepad for easy accessibility. 
+       ![Picture1](./images/GS1.png)
 
-    ![Picture1](./images/2nd1z.png)
+1. Click on **Continue** on the **Single sign-on to CloudLabs Organizations** page to proceed.
 
-1. Next, to get the authentication code, sign in to Outlook in the Lab VM through opening a new tab with the **GitHub** credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
+     ![Picture1](./images/GS2.png)
 
-   ```
-   https://outlook.office365.com/mail/
-   ```
-   
-   >**Note:** Make sure to log in to Outlook using the **GitHub credentials** provided to you from the environment details page of your lab.
+1. You'll see the **Sign in** tab. Here, enter your Azure Entra credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+        ![Picture1](./images/GS3.png)
+ 
+1. Next, provide your password to login:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+        ![Picture1](./images/GS4.png)
 
-   >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
-   
-   ![Picture1](./images/verify1.png)
+1. Click on **Accept**.
 
-   >**Note:** Please do not enable Two-Factor Authentication (2FA) after logging into GitHub for this lab. To avoid complications, use GitHub user accounts as outlined in the lab instructions. This will help prevent any issues related to 2FA validation during the exercise.
+   ![Picture1](./images/GS6.png)
 
-1. Accept the GitHub invitation using the same Outlook account.
+1. If prompted to stay signed in, you can click **No**.
 
-    ![Picture1](./images/invitation.png)
+   ![Picture1](./images/GS5.png)
 
-1. Click the invitation link to join, once it opens in Github.
-
-    ![Picture1](./images/invitation1.png)
-
-1. Click "Next" from the bottom right corner to embark on your Lab journey!
-
-   ![Picture1](./images/Sec1.png)
+1. You are now successfully logged in to GitHub and have been redirected to the GitHub homepage.
 
 ## Support Contact
 
