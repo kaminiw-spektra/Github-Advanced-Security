@@ -35,7 +35,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](../images/i6.png)
 
-1. In the **Code** tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
+1. In the **Code** tab of the Python repository, navigate to the **server** folder to open the `routes.py` file and scroll down to **Line 40**.
 
    ![github-advisory-database](../images/gm.png)
   

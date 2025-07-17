@@ -149,4 +149,6 @@ Learner Support Contacts:
 
 Now, click on Next from the lower right corner to move on to the next page.
 
+   ![Picture1](./images/Sec1.png)
+
 ## Happy Learning!!

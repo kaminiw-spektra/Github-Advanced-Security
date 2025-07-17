@@ -218,7 +218,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
 
 1. Click on **Pubish pattern**.
 
-   ![Picture1](../images/T3S4.png)
+   ![Picture1](../images/T3S4a.png)
 
    >**Note:** Please click **reload** if you are unable to see the **Publish pattern**.
 
