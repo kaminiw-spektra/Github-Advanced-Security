@@ -63,17 +63,15 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
 
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure and GitHub credentials. Click on the **GitHub Credentials** option to access the GitHub user credentials.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure credentials. Click on the **Environment** option to verify the credentials.
 
-   ![Picture1](./images/2ndz.png)
-
-   ![Picture1](./images/2nd1z.png)   
+   ![Picture1](./images/GS7.png)
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./images/splt.png)
+![Use the Split Window Feature](./images/splta.png)
  
 ## Managing Your Virtual Machine
  
@@ -137,6 +135,8 @@ has a context menu.
    ![Picture1](./images/GS5.png)
 
 1. You are now successfully logged in to GitHub and have been redirected to the GitHub homepage.
+
+   ![Picture1](./images/GS5a.png)
 
 ## Support Contact
 
