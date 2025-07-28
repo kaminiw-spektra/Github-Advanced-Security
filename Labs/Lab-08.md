@@ -1,5 +1,7 @@
 # Module 07: Security Campaign
 
+### Estimated Duration: 30 minutes
+
 ## Lab Scenario
 
  In this lab, we’ll cover a series of tasks designed to provide a comprehensive understanding of creating, launching, tracking, and managing security campaigns.
@@ -11,13 +13,11 @@ In this lab, you will perform:
 - Task 2: Tracking Security Campaign
 - Task 3: Editing and Managing Security Campigns
 
-## Estimated Timing: 30 minutes
-
 ## Architecture Diagram
 
    ![](../images/seccamp16.png)
 
-### Task 1: Creating Security Camapaign
+## Task 1: Creating Security Camapaign
 
 **Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
 
@@ -45,13 +45,23 @@ In this lab, you will perform:
 
    ![](../images/T1S4i.png)
 
-1. Click on **Save as** and select **Published campaign**.
+1. Click on **Save as (1)** and select **Published campaign (2)**.
 
-   ![](../images/T1S5iii.png)
+   ![](../images/T1S5iiinew.png)
 
 1. Edit the **Campaign name** and **Short description**, define a **Campaign due date**, assign a **Campaign manager** as the primary contact, and finally, click **Create campaign** to initiate it.
 
-    ![](../images/T1S6i.png)
+   - Enter a **Campaign name** — **Critical CodeQL alert (1)**.
+
+   - Write a **Short description (2)** — Explain the purpose and urgency of the campaign.
+
+   - Set the **Campaign due date** — Select the desired deadline from the **calendar picker (3)**.
+
+   - Select **Campaign managers (4)** — Assign responsible users or teams from the dropdown.
+
+   - Click **Publish campaign (5)**
+
+    ![](../images/T1S6inew.png)
 
 8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **ghas-bootcamp-WebGoat** to view its alerts.
 
@@ -67,24 +77,24 @@ In this lab, you will perform:
 
    >**Note:** There is a chance that the option to **Commit** may not appear. In this case, look for the **Generate Fix** option, click on it, and once the fix is generated, you will be able to commit.
 
-10. Select the option to open a pull request, then click **Commit changes**.
+10. Select the option to **Open a pull request (1)**, then click **Commit change (2)**.
 
-    ![](../images/seccamp4ab.png)
+    ![](../images/seccamp4abnew.png)
 
 11. Click on **Ready for review**.
 
     ![](../images/seccamp5b.png)
 
-12. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
+12. Click on **Merge pull request (1)** to finalize and integrate the changes into the main branch, then click on **Confirm merge (2)**.
 
-    ![](../images/T1S12iii.png)
-    ![](../images/T1S12ii.png)
+    ![](../images/T1S12iiinew.png)
+    ![](../images/T1S12iinew.png)
 
-### Task 2: Tracking Security Campaign
+## Task 2: Tracking Security Campaign
 
 When you create a campaign, the campaign tracking view is displayed and the campaign is listed in the sidebar of the **Security** tab for the organization. You can redisplay the campaign tracking view at any time by selecting it in the sidebar under "Campaigns".
 
-1. Here, you can view the details of the **Campaign's progress** and **Status**, along with the alerts supported by **Copilot Autofix**.
+ Here, you can view the details of the **Campaign's progress** and **Status**, along with the alerts supported by **Copilot Autofix**.
 
 - **In progress:** when at least one branch or pull request is created to fix the alert through the campaign view or the alert page.
 - **Closed:** when the alert is fixed or dismissed, even if the development work was done outside the campaign framework.
@@ -93,13 +103,13 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    ![](../images/a54b.png)
 
-   >**Note:** It will take upto 5-30 minutes to get it complete.
+   >**Note:** It will take upto 5-30 minutes to get it complete. If fix doesn't work the first time, try the process again and wait for 5 minutes before retrying. Sometimes it takes a few moments for GitHub Copilot to process and generate the fix.
    
    >**Note:** If you move to the next alert before completing the previous fix suggestion, you may encounter a message stating that the fix suggestion was discarded due to new code being pushed. In this case, you’ll need to generate the fix again.
 
-2. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **One of the alerts havs been closed**.
+1. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security (1)** from the top menu, then click on **Critical CodeQL alert (2)** under Campaigns. Here, you will see that **One of the alerts havs been closed (3)**.
 
-   ![](../images/a47.png)
+   ![](../images/a47new.png)
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
@@ -113,18 +123,18 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    >**Note:** There is a chance that the option to **Commit to new branch** may not appear. In this case, look for the **Generate Fix** option, click on it, and once the fix is generated, you will be able to commit.
 
-1. Select the option to open a pull request, then click **Commit changes**.
+1. Select the option to **Open a pull request (1)**, then click **Commit changes (2)**.
 
-    ![](../images/seccamp4a.png)
+    ![](../images/seccamp4anew.png)
 
 1. Click on **Ready for review**.
 
     ![](../images/seccamp5b.png)
 
-1. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
+1. Click on **Merge pull request (1)** to finalize and integrate the changes into the main branch, then click on **Confirm merge (2)**.
 
-    ![](../images/seccamp6b.png)
-    ![](../images/T2S7.png)
+    ![](../images/seccamp6bnew.png)
+    ![](../images/T2S7new.png)
 
 1. Now try refreshing the page.
 
@@ -144,25 +154,29 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    ![](../images/a53a.png)
 
-### Task 3: Editing and Managing Security Campigns
+## Task 3: Editing and Managing Security Campigns
 
 There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security tab of the organization.
 
 1. On GitHub, navigate to the main page of the organization.
 
+   ![Picture1](../images/mod7-task3-step1new.png)
+
 1. Under your organization name, click **Security**.
 
    ![Picture1](../images/security-tabat.png)
 
-1. In the sidebar, under "Campaigns" click the name of the campaign to display the campaign tracking view.
+1. In the sidebar, select **Campaigns (1)** click the name of the campaign **Critical CodeQL alert (2)** to display the campaign tracking view.
 
-1. In the campaign title row, click and select **Edit campaign**.
+   ![Picture1](../images/mod7-task3-step3new.png)
 
-   ![Picture1](../images/security-tabata.png)
+1. Click the three-dot menu **(⋯) (1)** in the top-right corner and select **Edit campaign (2)** to modify the campaign settings.
 
-1. In the **Edit Campaign** section, you can update the **Campaign name**, **Short description**, **Campaign due date**, and **Campaign manager**. Once done, click on **Save changes** to apply the updates.
+   ![Picture1](../images/security-tabatanew.png)
 
-   ![](../images/T3S5.png)
+1. In the **Edit Campaign** section, you can update the **Campaign name (1)**, **Short description (2)**, **Campaign due date (3)**, and **Campaign managers (4)**. Once done, click on **Save changes (5)** to apply the updates.
+
+   ![](../images/T3S5new.png)
 
 1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
 
@@ -172,11 +186,15 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
    ![](../images/T3S6.png)
 
-## Review
+## Summary
 In this lab you have completed the following:
 
 - Created a campaign from a template
 - Tracked Security Campaigns
 - Edited and Managed Security Campigns
 
-### You have successfully completed the lab, Click on **Next** to continue.
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)
