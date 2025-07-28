@@ -137,7 +137,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Region** | **East US (7)** |
 
    ![Picture1](../images/T3S8.png)
-   ![Picture1](mod8-task3-step8new1.png)
+
+   ![Picture1](../images/mod8-task3-step8new1.png)
 
      >**Note:** Keep rest of the options as default.
 

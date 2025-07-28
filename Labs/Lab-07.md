@@ -121,7 +121,7 @@ In this task, you will create a new Python file in the repository containing cod
     - Click the **Commit changes (3)** button to save.
 
 
-      ![](../images/commit1.png)
+   ![](../images/commit1.png)
 
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
