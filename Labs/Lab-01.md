@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
-The lab scenario provides an overview of GitHub Advanced Security (GHAS) and its key components, along with instructions on how to enable them in a GitHub repository.
+In this lab, you will get an overview of GitHub Advanced Security (GHAS) and its key components—Secret Scanning, Code Scanning, and Dependabot—while learning how to enable and use them in a GitHub repository.
 
 ## Lab Objectives
 In this lab, you will perform:

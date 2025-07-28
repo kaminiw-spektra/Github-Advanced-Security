@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
- In this lab, we’ll cover a series of tasks designed to provide a comprehensive understanding of creating, launching, tracking, and managing security campaigns.
+In this lab, we’ll cover a series of tasks designed to provide a comprehensive understanding of creating, launching, tracking, and managing security campaigns.
 
 ## Lab Objectives
 In this lab, you will perform:

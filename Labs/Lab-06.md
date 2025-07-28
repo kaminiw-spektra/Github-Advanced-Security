@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
-This lab guides users through enabling GitHub secret scanning for an organization, implementing push protection, creating custom secret patterns, and understanding the scanning results. By simulating the addition of GitHub Personal Access Tokens to repositories, users witness how secret scanning identifies and blocks active secrets. Thus emphasizing the importance of securing sensitive information within codebases. Through practical exercises, users gain insights into the role of secret scanning in mitigating security risks and maintaining the integrity of repositories.
+In this lab, you will enable GitHub Secret Scanning for an organization, implement push protection, create custom secret patterns, and analyze scanning results to understand how secret scanning helps detect and block sensitive information in code.
 
 ## Lab Objectives
 In this lab, you will perform:

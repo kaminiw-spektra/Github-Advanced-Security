@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
-The lab focuses on scaling out GitHub Advanced Security (GHAS) adoption, covering strategic approaches, security overview dashboards, webhooks integration, and repository rulesets. It emphasizes aligning GHAS rollout strategies, creating internal documentation, scaling code, and secret scanning. Additionally, it explores GHAS's security overview dashboard for insights and demonstrates webhook setup for external reporting tools like SIEM. Finally, it discusses the implementation of repository rulesets for enforcing branch and tag policies, enhancing security and compliance across repositories at scale.
+In this lab, you will focus on scaling GitHub Advanced Security (GHAS) adoption by aligning rollout strategies, leveraging the security overview dashboard for insights, integrating webhooks with external tools like SIEM, and implementing repository rulesets to enforce branch and tag policies—enhancing security and compliance across all repositories.
 
 ## Lab Objectives
 In this lab, you will perform:
@@ -137,7 +137,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Region** | **East US (7)** |
 
    ![Picture1](../images/T3S8.png)
-   ![Picture1](mod8-task3-step8new1.png)
+
+   ![Picture1](../images/mod8-task3-step8new1.png)
 
      >**Note:** Keep rest of the options as default.
 

@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
- In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
+In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
 ## Lab Objectives
 
@@ -20,8 +20,6 @@ In this lab, you will learn and perform:
 ## Architecture Diagram
 
 ![](../images/arch15a.png)
-
-
    
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  
 
@@ -123,7 +121,7 @@ In this task, you will create a new Python file in the repository containing cod
     - Click the **Commit changes (3)** button to save.
 
 
-      ![](../images/commit1.png)
+   ![](../images/commit1.png)
 
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
