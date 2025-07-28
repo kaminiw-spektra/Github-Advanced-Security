@@ -1,5 +1,7 @@
 # Module 01: GitHub Advanced Security Overview [Read Only]
 
+### Estimated Duration: 20 minutes
+
 ## Lab Scenario
 
 The lab scenario provides an overview of GitHub Advanced Security (GHAS) and its key components, along with instructions on how to enable them in a GitHub repository.
@@ -10,8 +12,6 @@ In this lab, you will perform:
 - Task 1: What is GitHub Advanced Security? 
 - Task 2: What are the components of GitHub Advanced Security?  
 - Task 3: What is the value of using GHAS? 
-
-## Estimated Timing: 20 minutes
 
 ## Task 1: What is GitHub Advanced Security?
 
@@ -177,11 +177,15 @@ Please feel free to go through the links for further understanding:
 3. [Adopting GitHub Advanced Security](https://docs.github.com/en/enterprise-cloud@latest/code-security/adopting-github-advanced-security-at-scale/introduction-to-adopting-github-advanced-security-at-scale)
 4. [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features)
 
-## Review
+## Summary
 In this lab, you have completed the following:
 
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
 + What is the value of using GHAS? 
 
-### You have successfully completed the lab, Click on **Next** to continue.
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)

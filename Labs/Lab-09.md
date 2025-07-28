@@ -1,5 +1,7 @@
 # Module 08: Scaling out GitHub Advanced Security (Optional)
 
+### Estimated Duration: 60 minutes
+
 ## Lab Scenario
 
 The lab focuses on scaling out GitHub Advanced Security (GHAS) adoption, covering strategic approaches, security overview dashboards, webhooks integration, and repository rulesets. It emphasizes aligning GHAS rollout strategies, creating internal documentation, scaling code, and secret scanning. Additionally, it explores GHAS's security overview dashboard for insights and demonstrates webhook setup for external reporting tools like SIEM. Finally, it discusses the implementation of repository rulesets for enforcing branch and tag policies, enhancing security and compliance across repositories at scale.
@@ -11,8 +13,6 @@ In this lab, you will perform:
 - Task 2: View the security overview dashboard and reports 
 - Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 - Task 4: Talk about repository rulesets and how they can be used at scale 
-
-## Estimated Timing: 60 minutes
 
 ## Architecture Diagram
 
@@ -72,9 +72,9 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](../images/T2S3.png)
 
-1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
+1. To explore the Security Overview dashboard, first click on **Overview (1)** in the left sidebar. At the top of the page, use the filter bar to narrow down alerts **(e.g., archived:false tool:github) (2)** and select a date range using the **calendar dropdown (3)**. As you adjust these filters, all data and metrics on the page, including graphs like **Open alerts over time**, will automatically update to reflect your selected criteria.
 
-   ![Picture1](../images/dashboard1a.png)
+   ![Picture1](../images/dashboard1anew.png)
   
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
@@ -118,11 +118,13 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Click on **+ Create**.
 
+   ![Picture1](../images/mod8-task3-step6new.png)
+
 1. From the Create Function App tab, select **Consumption (1)** and click on **Select (2)**.
 
    ![Picture1](../images/ghas-exercise1-9a.png)
 
-1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create**.
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create (9)**.
 
     | Setting | Action |
     | -- | -- |
@@ -135,6 +137,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Region** | **East US (7)** |
 
    ![Picture1](../images/T3S8.png)
+   ![Picture1](mod8-task3-step8new1.png)
 
      >**Note:** Keep rest of the options as default.
 
@@ -150,7 +153,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. On Template details page, leave the default options and click on **Create**.
 
-   ![Picture1](../images/T3S10.png)
+   ![Picture1](../images/T3S10new1.png)
 
    > **Note :** If you get any **error message**, **refresh** the page and the function which you created will be present under the functions tab in the overview page.
 
@@ -176,17 +179,17 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
       ![Picture1](../images/functionabg.png)
 
-   4. Click **Apply**, then confirm by clicking **Yes** to apply the monitoring settings.
+   4. Click **Apply (1)**, then confirm by clicking **Yes (2)** to apply the monitoring settings.
 
-      ![Picture1](../images/functionabh.png)
+      ![Picture1](../images/functionabhnew.png)
 
    5. Wait for the configuration to complete. Then, go back to your **HttpTrigger1** function and open the **Invocations** tab — you should now see it is configured.
 
       ![Picture1](../images/functionabd.png)
 
-1. Go to the **Developer** section of your **HttpTrigger** function, click on **Code + Test (1)**, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
+1. To get the function URL for your Azure HTTP-triggered function, first go to the **Code + Test (1)** tab, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
    
-    ![Picture1](../images/trigger1.png)
+    ![Picture1](../images/trigger1new.png)
 
 1. Navigate to the **setting** tab of your **GitHub Organization**..
 
@@ -196,26 +199,28 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](../images/T3S16.png)
 
-1. Click on **Add Webhooks** and give your GitHub password.
+1. Click on **Add webhook** and give your GitHub password.
+
+   ![Picture1](../images/mod8-task3-step17new.png)
 
 1. In the GitHub repository, navigate to the **Webhooks** settings. Paste the URL generated by the HttpTrigger function into the **Payload URL (1)** field. This URL will be used to send requests to your Azure Function whenever events occur in the repository.
 
-   - **Content type**: Select **application/JSON (2)** so that you can receive the payload as a JSON object.
+   - **Content type**: Select **application/json (2)** so that you can receive the payload as a JSON object.
    - **Secret**: You can leave this blank.
    - **SSL verification**: Leave this as the default option of **Enable SSL verification (3)**.
-   - **Which events would you like to trigger this webhook?** Select the **Just the push event** option **(4)**.
+   - **Which events would you like to trigger this webhook?** Select the **Just the push event (4)** option.
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
-   - Click on **Add Webhooks (6)**.
+   - Click on **Add webhook (6)**.
 
       ![Picture1](../images/T3S18.png)
 
       >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
 
-11. Now go to the **Repositories** section and click on **New Respsitories**.
+11. Now go to the **Repositories (1)** section and click on **New Respsitory (2)**.
 
-    ![Picture1](../images/T3S19.png)
+    ![Picture1](../images/T3S19new.png)
 
-12. To create the repositories, name them **Test-webhook (1)** then select **Public** **(2)** then also ensure to add a **README file** **(3)**. Finally, click on **Create repository** **(4)** to complete the process.
+12. To create the repository, name it **Test-webhook (1)**, select **Internal (2)** as the visibility option, ensure to check **Add a README file (3)** to initialize the repository, and finally, click on **Create repository (4)** to complete the process.
 
     ![Picture1](../images/T3S20.png)
   
@@ -225,7 +230,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/T3S21.png)
 
-14. Create a file named **issue-template.md** **(1)**, add the provided code into the file **(2)**, and then click on **Commit changes** **(3)** to save.
+14. Create a file named **issue-template.md** **(1)**, add the provided code into the file **(2)**, and then click on **Commit changes...** **(3)** to save.
 
     ```
     ## Build Failure
@@ -241,7 +246,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/T3S22.png)
 
-15. **Commit changes** the new file to your repository.
+15. Enter the commit message and click **Commit changes** to save.
 
      ![Picture1](../images/lab7testwebhook3.png)
 
@@ -253,7 +258,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/lab7testwebhook5.png)
 
-18. Change the file name of the YAML configuration file to **ci.yml** **(1)**. Paste the provided **code** **(2)** into this file to define the workflow configuration. Finally, click on **Commit changes** **(3)** to save the file with these updates.
+18. Change the file name of the YAML configuration file to **ci.yml** **(1)**. Paste the provided **code** **(2)** into this file to define the workflow configuration. Finally, click on **Commit changes...** **(3)** to save the file with these updates.
 
 	```
 	name: CI 
@@ -305,11 +310,11 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/T3S26.png)
 
-19. **Commit changes** the new file to your repository.
+19. Enter the commit message and click **Commit changes** to save.
 
      ![Picture1](../images/lab7testwebhook7.png)
 
-20. Navigate to the **Actions** tab **(1)** where you'll find that the creation of **ci.yml** **(2)** failed due to an issue.
+20. Navigate to the **Actions (1)** tab, where you'll find that the creation of **ci.yml** **(2)** failed due to an issue.
 
      ![Picture1](../images/lab7testwebhook8.png)
 
@@ -317,7 +322,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Repository Settings](../images/T3S15.png)
 
-14. Click on **Webhooks** from the left Navigation pane and select the Webhook you have created.
+14. Click on **Webhooks** from the left Navigation pane.
+
+      ![](../images/mod8-task3-step30new.png)
 
 1. Select the Webhook you have created.
 
@@ -333,9 +340,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/response.png)
 
-17. Navigate back to your **Function app** in the Azure portal and select the HTTP trigger function you created. Click on **Invocations (1)**. This section provides the most recent invocation traces, allowing you to review and analyze the function's execution history.
+17. Navigate back to your **Function app** in the Azure portal and select the HTTP trigger function you created. Click on **Invocations**. This section provides the most recent invocation traces, allowing you to review and analyze the function's execution history.
 
-    ![Picture1](../images/ghas-exercise1-12.png)
+    ![Picture1](../images/mod8-task3-step34new.png)
    
     >**Note:** It will take 5-7 minutes to show.
 
@@ -369,15 +376,15 @@ You can create rulesets to control how users interact with selected branches and
 
    - To create a ruleset targeting branches, click on **New branch ruleset**.
    - To create a ruleset targeting tags, select **New tag ruleset**.
-   - To create a rule set targetting specific scope of the rule to which repos, orgs, or branches it should apply, select **New push ruleset**.
 
-      ![Picture1](../images/T4S5.png)  
+      ![Picture1](../images/mod8-task4-step5new.png)  
   
-1. In the **"General"** section, type a name for the ruleset, then select **Disabled**  and click one of the following enforcement statuses:
+1. In the **New branch ruleset** section, type a name for the **ruleset (1)**, then select **Disabled (2)**  and click one of the following enforcement statuses:
 
    - **Active**: Your ruleset will be enforced upon creation.
    - **Disabled**: Your ruleset will not be enforced.
 
+      ![](../images/rulesetnew.png) 
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
 For more details, refer to the [GitHub documentation on rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
@@ -411,7 +418,7 @@ For more details, refer to the [GitHub documentation on rulesets](https://docs.g
 1. Now, click on the **Next** from the lower right corner to move to the next page.
 
 
-## Review
+## Summary
 
 In this lab, you have completed the following:
 
@@ -420,4 +427,4 @@ In this lab, you have completed the following:
 + Reviewed Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 + Talked about repository rulesets and how they can be used at scale 
 
-### You have successfully completed the lab.
+## You have successfully completed this Hands-on lab.

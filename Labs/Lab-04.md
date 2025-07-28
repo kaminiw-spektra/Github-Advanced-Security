@@ -1,5 +1,7 @@
 # Module 04: Software Composition Analysis
 
+### Estimated Duration: 40 minutes
+
 ## Lab Scenario
 
 In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
@@ -14,32 +16,31 @@ In this lab, you will perform:
 
 ![](../images/arch6.png)
 
-## Estimated Timing: 40 minutes
-
 ## Task 1: Use the dependency review action to stop a pull request that contains the log vulnerability
 
 ### Dependency Review Action
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
 
-1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
+1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions (1)**, and in the **Actions**, click on **New workflow (2)** from the left navigation pane.
 
-   ![github-advisory-database](../images/T1S1i.png)
+   ![github-advisory-database](../images/T1S1inew.png)
 
-   ![github-advisory-database](../images/T1S1ii.png)
+   ![github-advisory-database](../images/T1S1iinew.png)
  
-1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
+1. Now, search **Dependency Review (1)** to find and configure the action by clicking the **Configure (2)** button.
    
-   ![github-advisory-database](../images/T1S2.png)
+   ![github-advisory-database](../images/T1S2new.png)
 
-1. In the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **#** as shown in the below screenshot and click on **Commit Changes** in the top right corner.
+1. In the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **# (1)** as shown in the below screenshot and click on **Commit changes.. (2)** in the top right corner.
 
    >**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: low, moderate, high, critical** is directly below the **comment-summary-in-pr: always** line, as shown below:
 
    >**Note:** The default value of **fail-on-severity** will work as well, but here we demonstrate how to modify your severity level.
 
    ![github-advisory-database](../images/g7at.png)
-   ![github-advisory-database](../images/uncmtat.png)
+   ![github-advisory-database](../images/uncmtatnew.png)
+   ![github-advisory-database](../images/mod4-task1-step7-newone1.png)
 
 1. To ensure there are no mistakes in the code, as even a small indentation error can cause issues, you can use the code below and replace it with the existing one.
 
@@ -90,11 +91,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](../images/T1S5i.png)
 
-1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
+1. Now, return to the **ghas-bootcamp-webgoat** repository and open the **pom.xml** file.
 
    ![github-advisory-database](../images/T1S6.png)
    
-1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot by clicking on the pencil icon and delete the existing lines as mentioned.
+1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot. Click the **Edit** button (pencil icon) to enter edit mode, and remove the existing lines as specified before saving your changes.
 
    - **Security Vulnerabilities:** Log4j has been known to have critical security vulnerabilities. This vulnerability allowed attackers to execute arbitrary code on a server or other computer running Log4j, leading to severe security risks such as remote code execution.
 
@@ -107,14 +108,15 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 		   <version>2.13.1</version>
 		</dependency>
 		```
+	  ![github-advisory-database](../images/mod4task1step7new.png)
 
       ![github-advisory-database](../images/gx2at.png)
 
       ![github-advisory-database](../images/gx2.png)
 
-1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
+1. Click on **Commit Changes** and make sure you select **Create a new branch (1)** option and click on **Propose changes (2)** .
 
-   ![github-advisory-database](../images/T1S8.png)
+   ![github-advisory-database](../images/T1S8new.png)
 
 1. Click on **Create pull request**. 
 
@@ -132,13 +134,17 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
       ![github-advisory-database](../images/prfaila.png)
 
-1. You can also see the error details on *Actions* section, navigate to **Action** section and from the left navigation pane, click on **Dependency review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+1. You can also review the error details in the *Actions* section. To do so, navigate to **Actions** and, from the left-hand navigation pane, click on **Dependency review (1)**. Notice the failed review **Update pom.xml (2)**, which indicates that the dependency review failed due to the introduction of a vulnerable version of `Log4j` in the **pom.xml** file.
 
-   ![github-advisory-database](../images/gx1a.png)
+   ![github-advisory-database](../images/gx1anew.png)
 
-## Review
+## Summary
 
 In this module, we have completed the following:
 -  Used the dependency review action to stop a Pull Request that contains the log vulnerability
 
-### You have successfully completed the lab, Click on **Next** to continue.
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)

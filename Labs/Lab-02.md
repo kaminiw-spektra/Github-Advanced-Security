@@ -1,5 +1,7 @@
 # Module 02: Enable Github Security configuration on your organization
 
+### Estimated Duration: 20 minutes
+
 ## Lab Scenario
 
 In this task, you will apply the Security configuration to repositories within your organization. This configuration helps enable key security features such as Dependabot, Code Scanning, and Secret Scanning to reduce security risks.
@@ -17,9 +19,7 @@ In this lab, you will perform:
 
 ![](../images/arch5a.png)
 
-## Estimated Timing: 20 minutes
-
-### Task 1: Applying security settings in your organization.
+## Task 1: Applying security settings in your organization.
 
 ### About the security configuration
 
@@ -43,50 +43,50 @@ Applying the security configuration to all repositories in your organization
 
    ![Repository Settings](../images/T1S4.png)
 
-1. In the Settings menu, click-on **Configurations** under Advanced Security from the Security section.
+1. In the Settings menu, click-on **Configurations (2)** under **Advanced Security (1)** from the Security section.
 
-   ![Code Security Configurations](../images/T1S5ii.png)
+   ![Code Security Configurations](../images/T1S5iinew.png)
 
 1. Click on **New Configuration** to start creating a new security configuration for the repository.
 
    ![Code Security Configurations](../images/mod1org4-1.png)
 
-1. The **Name** field should be filled with `Security_settings_enable`, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`, offering a brief overview of what the configuration will accomplish.
+1. The **Name** field should be filled with `Security_settings_enable`**(1)**, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`**(2)**, offering a brief overview of what the configuration will accomplish.
 
-   ![Code Security Configurations](../images/mod1org5.png)
+   ![Code Security Configurations](../images/mod1org5new.png)
 
-1. In the **Secret scanning** section. You'll find that some options are enabled by default.
+1. In the **Secret scanning** section. You'll find that some options are enabled by default. It is recommended to leave these settings unchanged.
 
    ![Code Security Configurations](../images/mod1org6a-1.png)
 
-1. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**.
+1. Leave the **Alerts** option set to **Enabled (1)**, and change the remaining options to **Not set (2)**.
 
-   ![Code Security Configurations](../images/mod1org6-1.png)
+   ![Code Security Configurations](../images/mod1org6-1new1.png)
 
-1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is enabled.
+1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is **Enabled**.
 
    ![Code Security Configurations](../images/codesec.png)
 
-1. Scroll down to the **Dependency scanning** section. You'll find that all options are enabled by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
+1. Scroll down to the **Dependency scanning** section. You'll find that all options are **Enabled** by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
 
    ![dep1](../images/dep1a.png)
    ![dep2](../images/dep3a.png)
 
-   >**Note:** Here, we will leave it set to the default.
+   >**Note:** In this step, we will leave the settings at their default values.
 
 1. In the **Policy** section, next to **Enforce configuration**, select **Don't enforce** from the dropdown menu.
 
    ![Code Security Configurations](../images/codesec4.png)
 
-1. Finally, click **Save Configurations** to apply your changes.
+1. Finally, click **Save configuration** to apply your changes.
 
    ![Code Security Configurations](../images/saveconf.png)
 
-1. On the **Apply Configuration** page, click on **Select 4 repos (1)** while leaving out the **.github** public repository. Then, click on **Apply Configuration (2)** to apply the settings across all repositories. Next, select **Security_settings_enable (3)** and click **Apply** when prompted. This will activate Security alerts for all repositories in your organization, helping to detect any exposed secrets or sensitive information.
+1. On the **Apply Configuration** page, select **4 of 5 repositories (1)**, making sure to exclude the **.github** public repository. Then, click on **Apply configuration (2)** to apply the settings across all repositories. Next, select **Security_settings_enable (3)** and click **Apply (4)** when prompted. This will activate Security alerts for all repositories in your organization, helping to detect any exposed secrets or sensitive information.
 
    ![Code Security Configurations](../images/a38a.png)
 
-   ![Code Security Configurations](../images/a38b.png)
+   ![Code Security Configurations](../images/a38bnew1.png)
 
 1. You will find that the organization configurations for **Security_settings_enable** are enforced on 4 repositories.
 
@@ -120,13 +120,13 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
    ![Select Organization](../images/T2S1.png)
 
-1. Click on the **Settings** tab.
+1. Click the **Settings** tab located in the top navigation bar.
 
    ![Repository Settings](../images/T1S4.png)
 
-1. In the Settings menu, click-on **General** under **Actions** from the **Code, planning, and automation** section.
+1. In the Settings menu, under the **Code, planning, and automation** section, click **Actions (1)**, and then select **General (2)**.
 
-   ![Code Security Configurations](../images/T2S3i.png)
+   ![Code Security Configurations](../images/T2S3inew.png)
 
 1. Select **Allow all actions and reusable workflows (1)**, and then click **Save (2)** to apply the changes.
 
@@ -136,17 +136,17 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 ## Task 3: Enabling Copilot Autofix for Code Scanning
 
-In this task, On your organization's settings and you will enable **Copilot Autofix** under the **Code Scanning** section. This ensures AI-powered automated fixes are available across your organization, enhancing security vulnerability remediation.
+In this task, you will navigate to your organization’s **Settings** and enable **Copilot Autofix** under the **Code Scanning** section. This ensures that AI-powered automated fixes are available across your organization, enhancing the remediation of security vulnerabilities.
 
-1. In your organization's **Settings** menu, click-on **Global Settings (2)** under **Advanced Security (1)** from the Security section.
+1. In your organization's **Settings** menu, click-on **Global settings (2)** under **Advanced Security (1)** from the Security section.
 
    ![Repository Settings](../images/ghass1.png)
 
 1. Under the **Code Scanning** section, please ensure that **Copilot Autofix** is enabled across your entire organization.
 
-   ![Repository Settings](../images/mod1orgb.png)
+   ![Repository Settings](../images/mod1orgbnew.png)
 
-## Review
+## Summary
 
 In this module, we have completed the following:
 
@@ -154,4 +154,8 @@ In this module, we have completed the following:
 - Activate Actions for All Repositories
 - Enabled Copilot Autofix for Code Scanning
 
-### You have successfully completed the lab, Click on **Next** to continue.
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)

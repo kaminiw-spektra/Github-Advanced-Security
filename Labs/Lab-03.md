@@ -1,5 +1,7 @@
 # Module 03: Exploring Dependabot, Secret Scanning, and CodeQL in GHAS [Read Only]
 
+### Estimated Duration: 30 minutes
+
 ## Lab Scenario
 
 In this lab, you will explore Dependabot, Secret Scanning, and Code Scanning, gaining a deeper understanding of how each tool enhances software security and project maintenance within GitHub Advanced Security.
@@ -7,13 +9,11 @@ In this lab, you will explore Dependabot, Secret Scanning, and Code Scanning, ga
 ## Lab Objectives
 In this lab, you will perform:
 
-- Depandabot and its features
-- Secret Scanning and its features
-- Code Scanning
+- Task 1: Depandabot and its features
+- Task 2: Secret Scanning and its features
+- Task 3: Code Scanning
 
-## Estimated Timing: 30 minutes
-
-## Dependabot and its features
+## Task 1: Dependabot and its features
 
 Dependabot manages your project’s dependencies according to the dependency file available in the repository in an automated way. Dependabot checks dependencies in your project and creates pull requests whenever a new version is available. It saves a significant amount of time and makes the process autonomous. Dependabot helps to elevate the project’s robustness and reduce system vulnerabilities by keeping dependencies up-to-date.
 
@@ -59,7 +59,7 @@ GitHub Dependabot works in a streamlined way to manage dependencies.
 
 - **Dependabot alerts:** If Dependabot finds a dependency with a known security vulnerability, it creates a security alert.
 
-## Secret Scanning and its features
+## Task 2: Secret Scanning and its features
 
 Secret scanning is a security feature that automatically scans code repositories for accidentally committed sensitive information like API keys, passwords, tokens, and other private credentials, alerting the repository owner when it detects potential secrets, helping to prevent data leaks and security breaches.
 
@@ -91,7 +91,7 @@ Below is a typical workflow that explains how secret scanning works:
 
 - **Integration with partners:** GitHub works with various service providers to validate secrets. When a partner secret is detected, GitHub notifies the provider so they can take appropriate action, such as revoking the credential.
 
-## Code Scanning 
+## Task 3: Code Scanning 
 
 Code scanning in GitHub is a powerful feature designed to enhance the security of your software projects by automatically identifying and alerting you to potential security vulnerabilities in your codebase. Leveraging advanced static analysis techniques, and code scanning helps detect security flaws, bugs, and other issues early in the development process, enabling developers to address them proactively before they escalate into larger problems. 
 
@@ -133,4 +133,15 @@ CodeQL is a programming language and associated tools that treat code like data.
 
 1. [Secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
 
-### You have successfully completed the lab, Click on **Next** to continue.
+## Summary
+In this lab, you have completed the following:
+
++ Depandabot and its features.
++ Secret Scanning and its features.
++ Code Scanning. 
+
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)

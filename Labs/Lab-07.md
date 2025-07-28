@@ -1,5 +1,7 @@
 # Module 06: Code Scanning
 
+### Estimated Duration: 90 minutes
+
 ## Lab Scenario
 
  In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
@@ -19,7 +21,7 @@ In this lab, you will learn and perform:
 
 ![](../images/arch15a.png)
 
-## Estimated timing: 90 minutes
+
    
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  
 
@@ -35,19 +37,19 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](../images/i6.png)
 
-1. In the **Code** tab of the Python repository, navigate to the **server** folder to open the `routes.py` file and scroll down to **Line 40**.
+1. In the **Code (1)** tab of the Python repository, navigate to the **server (2)** folder to open the **routes.py (3)** file.
 
-   ![github-advisory-database](../images/gm.png)
+   ![github-advisory-database](../images/gmnew.png)
   
 1. Notice that this part of the code is related to the vulnerabilities that have to do with SQL.
 
-1. Uncomment the lines of code by removing **`#`** from **line 33 to the last line**.
+1. Uncomment the lines of code by removing **`#`** from **line 33 to the last line (1)**, and click on **Commit changes.. (2)**
 
-   ![](../images/comment1.png) 
+   ![](../images/comment1new.png) 
 
-1. Click on commit to commit these changes to a **new branch** then click on **Propose changes.**  
+1. Select **Create a new branch (1)** then click on **Propose changes (2)**  .
  
-   ![github-advisory-database](../images/T1.1S6.png)
+   ![github-advisory-database](../images/T1.1S6new.png)
 
 1. Open a *Pull request* into the **main** branch, click on **Create pull request.**
 
@@ -63,9 +65,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 Refer to the link for more information: [Triaging code scanning alerts in pull requests](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests)
 
-## Fix code vulnerabilities using Github Copilot Autofix
-
 ## Task 2: Create a code with potencial security vulnerabilities
+
+In this task, you will create a new Python file in the repository containing code with intentional security flaws such as SQL injection.
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the **Add file (1)** button and select **+ Create new file (2)**.
@@ -116,9 +118,10 @@ Refer to the link for more information: [Triaging code scanning alerts in pull r
 
 6. Commit the changes:
     - Click on **Commit changes** on the top right corner. 
-    - Add a Extended description message describing the changes (e.g., “Add app.py with potential SQL Injection vulnerability”).
-    - Choose whether to commit directly to the main branch or create a new branch for this commit.
-    - Click on Commit new file to save your changes.
+    - Enter **Commit Message** – Type **Create app.py (1)** in the commit message box.
+    - Write **Extended Description** – Add a detailed note like **Add app.py with potential SQL Injection vulnerability (2)**.
+    - Click the **Commit changes (3)** button to save.
+
 
       ![](../images/commit1.png)
 
@@ -132,14 +135,17 @@ Ensure that the file is created and the code is correctly saved in your reposito
    ![](../images/action1a.png) 
 
 2. Check the CodeQL workflow:
-   - Look for the CodeQL workflow in the list of workflows.
+   - Look for the CodeQL workflow in the list of workflows. 
    - Ensure that the workflow has run automatically after committing the changes.
+   - Click on **Push on main**.
+
+   ![](../images/mod6-task3-step2new.png)
 
 3. Review the scan results:
    - Click on the latest run of the CodeQL workflow to view the details.
    - Check the results to see if any vulnerabilities were identified.
 
-     ![](../images/resultas.png) 
+     ![](../images/resultasnew.png) 
 
      > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
@@ -153,13 +159,13 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
    ![](../images/scana.png) 
 
-3. If an autofix is available, click on Generate fix to automatically apply the suggested fix.
+3. If an autofix is available, click on **Generate fix** to automatically apply the suggested fix.
 
    ![](../images/fixa.png)
 
    > **Note:** It will take approximately a minute to generate the fix.
 
-4. Click on **Commit to new branch** and Commit the changes to your repository.
+4. Click on **Commit to new branch** and click **Commit changes** to confirm and commit the changes to your repository.
 
    ![](../images/newchangea.png) 
 
@@ -169,7 +175,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
    ![](../images/newchangec.png)
 
-5. Make sure to merge and pull the request.
+5. Make sure to merge and pull the request. Click on **Merge pull request**.
 
    ![](../images/T4S6.png) 
 
@@ -179,7 +185,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
    > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
 
-## Review
+## Summary
 
 In this lab you have completed the following:
 
@@ -189,4 +195,8 @@ In this lab you have completed the following:
 - Run a code scan
 - Apply autofixes to fix code vulnerabilities
 
-### You have successfully completed the lab, Click on **Next** to continue.
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)
