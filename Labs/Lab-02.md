@@ -106,7 +106,7 @@ Applying the security configuration to all repositories in your organization
 
 1. Here, you can review your alerts in the security overview.
 
-   ![Picture1](../images/T1S19.png)
+   ![Picture1](../images/T1S19new1.png)
 
    >**Note:** Here, you will find that the security features are enabled for the repository present in the organization. You will also find this in other repositories, and you are free to check them as well.
 
