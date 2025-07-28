@@ -427,8 +427,4 @@ In this lab, you have completed the following:
 + Reviewed Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 + Talked about repository rulesets and how they can be used at scale 
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-            
- ![Picture1](../images/NEXT-PAGEak.png)
+## You have successfully completed this Hands-on lab.
