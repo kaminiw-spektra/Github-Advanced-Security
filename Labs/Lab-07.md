@@ -68,11 +68,13 @@ Refer to the link for more information: [Triaging code scanning alerts in pull r
 In this task, you will create a new Python file in the repository containing code with intentional security flaws such as SQL injection.
 
 1. Create a new file in the repository **ghas-bootcamp-python**
+
 1. Click on the **Add file (1)** button and select **+ Create new file (2)**.
 
    ![](../images/file1.png)
 
 1. Name your file (e.g., app.py).
+
 1. Copy and paste the below code:
 
    In the new file, write the code that includes potential security vulnerabilities. For example, you can use the following code snippet:
@@ -119,12 +121,10 @@ In this task, you will create a new Python file in the repository containing cod
     - Enter **Commit Message** – Type **Create app.py (1)** in the commit message box.
     - Write **Extended Description** – Add a detailed note like **Add app.py with potential SQL Injection vulnerability (2)**.
     - Click the **Commit changes (3)** button to save.
+   
+    ![](../images/commit1.png)
 
-
-   ![](../images/commit1.png)
-
-7. Verify the file:
-Ensure that the file is created and the code is correctly saved in your repository.
+7. Verify the file: Ensure that the file is created and the code is correctly saved in your repository.
 
 ## Task 3: Run a code scan
 
