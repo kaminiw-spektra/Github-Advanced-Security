@@ -1,5 +1,7 @@
 # Module 05: Secret Scanning
 
+### Estimated Duration: 60 minutes
+
 ## Lab Scenario
 
 This lab guides users through enabling GitHub secret scanning for an organization, implementing push protection, creating custom secret patterns, and understanding the scanning results. By simulating the addition of GitHub Personal Access Tokens to repositories, users witness how secret scanning identifies and blocks active secrets. Thus emphasizing the importance of securing sensitive information within codebases. Through practical exercises, users gain insights into the role of secret scanning in mitigating security risks and maintaining the integrity of repositories.
@@ -15,8 +17,6 @@ In this lab, you will perform:
 ## Architecture Diagram
 
 ![](../images/arch10.PNG)
-
-## Estimated Timing: 60 minutes
 
 ## Task 1: Demonstrate Secret Scanning Functionality
 
@@ -36,15 +36,17 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/T2S4.png)
 
-1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
+1. Go to **Developer settings** from the left Navigation pane, click on **Personal access tokens (1)** then select **Tokens (classic) (2)**. Click on **Generate new token (3)** and choose **Generate new token (classic) (4)** for general use.
 
    ![Picture1](../images/token1a.png)
+   
 
-1. Give your secret a name **Secret01 (1)** under *Note* field and set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. 
+1. Give your secret a name **Secret01 (1)** in the **Note** field, set the **Expiration** to **Custom (2)** and choose the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token (4)** to create your personal access token.
 
    >**Note:** If **Secret01** and **Secret02** already exist, delete them and recreate the secrets.
 
    ![new personal acess token](../images/sec10.png)
+   ![Picture1](../images/mod5-task1-step2new.png)
 
 1. Once you've generated the token, click the **Copy** icon to the right of the secret value.
 
@@ -60,7 +62,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Click on **Repositories (1)** and select **ghas-bootcamp-javascript (2)**.
 
-   ![Picture1](../images/T1S7.png) 
+   ![Picture1](../images/T1S7new.png) 
 
 1. In the ghas-bootcamp-javascript repository navigate to **Settings** from the top navigation pane.
 
@@ -80,19 +82,19 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/mod2code1.png)
    
-1. Open the **_index.js_** file and click the pencil icon at the top-right of the code block to edit it. Add **` var secret = "Your-Secret-Value"`** to the code, and click on **Commit changes**.
+1. Open the **_index.js_ (1)** file and click the **pencil icon (2)** at the top-right of the code block to edit it. Add **` var secret = "Your-Secret-Value"` (3)** to the code, and click on **Commit changes (4)**.
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
 
-   ![Picture1](../images/index.png)
+   ![Picture1](../images/indexnew.png)
+   ![Picture1](../images/pencilnew1.png)
+   ![Picture1](../images/T1S12inew.png)
 
-   ![Picture1](../images/T1S12i.png)
-
-1. Click on **Commit changes** and then click on **Commit changes** again to commit directly to default branch.
+1. Click on **Commit changes** to commit directly to default branch.
 
    ![Picture1](../images/allowsecrett1.png)    
 
-1. Then navigate to the **Security (1)** from the top, expand **Secret Scanning (2)** section and select **Default (3)** to show how this is an active secret. **(4)**
+1. Then navigate to **Security (1)** from the top menu, expand the **Secret scanning (2)** section, and click on **Default (3)** to view the list of detected secrets. This will display any exposed secrets, such as a **GitHub Personal Access Token (4)**, and show whether it is still valid or publicly leaked.
 
    ![Picture1](../images/img2a.png)
 
@@ -100,12 +102,12 @@ Secret scanning automatically scans your entire Git history on all branches pres
    
    > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-1. Review the secret. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. When you click on **Verify Secret** and it shows up as an **Active Secret**, it means that the secret (such as an API key or token) is still valid and can be used to access the associated service. This indicates that the secret is still exploitable and should be addressed immediately to prevent any potential security risks.
+1. Review the secret. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. When you click on **Verify Secret (1)** and it shows up as an **Active Secret (2)**, it means that the secret (such as an API key or token) is still valid and can be used to access the associated service. This indicates that the secret is still exploitable and should be addressed immediately to prevent any potential security risks.
 
    >**Note:** There is a chance that it will be automatically verified, and you will directly see it as an **Active Secret**.
 
-   ![Picture1](../images/mod1.4n.png)
-   ![Picture1](../images/mod1.4na.png)
+   ![Picture1](../images/mod1.4nnew.png)
+   ![Picture1](../images/mod1.4nanew.png)
 
    > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
 
@@ -117,10 +119,10 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
-1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Advanced security** under Securilty. 
+1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings (1)**, click on **Advanced security (2)** under Securilty. 
 
-   ![github-advisory-database](../images/g12.png)
-   ![github-advisory-database](../images/image1a.png)
+   ![github-advisory-database](../images/g12new1.png)
+   ![github-advisory-database](../images/image1anew.png)
 
 1. Scroll down to **Push protection** under Secret Protection and click **Enable**.
 
@@ -142,9 +144,10 @@ In this task, you will enable push protection to prevent secrets from being comm
 
    ![Picture1](../images/token1b.png)
 
-1. In the New personal access token, provide secret a name, **Secret02 (1)**, set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
+1. Give your secret a name **Secret02 (1)** in the **Note** field, set the **Expiration** to **Custom (2)** and choose the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token (4)** to create your personal access token.
 
    ![Picture1](../images/sec12a.png)
+   ![Picture1](../images/mod5-task1-step2new.png)
 
 1. Once you've generated the token, click on the **"Copy"** icon to the right of the secret value.
 
@@ -156,13 +159,14 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     ![Picture1](../images/index.png)
 
-1. Click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes by clicking on **Commit changes** with the default options to the attempt to push the code.    
+1. Click the **pencil icon (1)** on the top-right of the code block to edit it, and add **`var secret2 = "Your-Secret-Value"` (2)** to the code. Commit the changes by clicking on **Commit changes... (3)**. In the new window that opens, click on **Commit changes (4)** again to confirm and push the changes.    
 
-   ![Picture1](../images/T2S11i.png)
+   ![Picture1](../images/pencilnew2.png)
+   ![Picture1](../images/T2S11inew.png)
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 8.     
 
-   ![Picture1](../images/index2.png)    
+   ![Picture1](../images/index2new.png)    
 
     >**Note**: This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
 
@@ -172,7 +176,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     ![push-protection1](../images/T2S12.png)
 
-11. Navigate to the **Security** -> **Secret Scanning (1)** -> **Default (2)**. Change the finding option to the **Closed (3)** section to demonstrate that this is a secret.
+11. Navigate to Security from the top menu, expand **Secret scanning (1)**, and select **Default (2)**. Then, change the filter to show Closed findings by typing **closed (3)** in the search bar to demonstrate that the secret has been detected.
 
     ![push-protection1](../images/T2S13.png)
 
@@ -190,10 +194,10 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will create and apply a custom secret pattern to detect specific types of sensitive information. Access the secret scanning settings in the repository and define a new secret pattern, including a name and regular expression, to identify specific secrets. Test the pattern using a known secret and a modified PAT to evaluate its effectiveness. Save and publish the custom pattern, then review the results to see how it identifies secrets based on the pattern.
 
-1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings** tab of the repo, click on **Advanced security**.
+1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings (1)** tab of the repo, click on **Advanced security (2)**.
 
-   ![github-advisory-database](../images/g12.png)
-   ![github-advisory-database](../images/image1a.png)
+   ![github-advisory-database](../images/g12new.png)
+   ![github-advisory-database](../images/image1anew.png)
 
 1. Scroll down to **Secret Protection** section and then click on the **New pattern** button.
 
@@ -207,7 +211,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
    - **Before Secret**:  provide regular expression patterns as `(?:\A|[^a-zA-Z0-9])(?i)(?:api|jwt|mysql)?[_.-]?(?:[Pp]ass?(?:wo?r?d|code|phrase)|[Pp]wd|secret)[\t ]*(={1,3}|:)[\t ]*(?:["']|b["'])?` **(4)**.
    - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
    - **Test string**:  `gH4$kP!2w_ ` **(6)**
-
+   - Click on **Save and dry run (7)**
      ![push-protection1](../images/T3S3.png)
       
       > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
@@ -238,7 +242,7 @@ In this task, we delved into comprehending the outcomes of secret scanning.
 
 Please feel free to go through the documents for further understanding:[Security](https://github.blog/category/security/)
 
-## Review
+## Summary
 
 In this lab, we have completed the following:
 
@@ -246,5 +250,9 @@ In this lab, we have completed the following:
  - Turned on push protection and tried pushing a new secret (a GitHub token) into a repository
  - Created a custom secret pattern
  - Understanding the results 
- 
-### You have successfully completed the lab, Click on **Next** to continue.
+
+### You have successfully completed the lab.
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+            
+ ![Picture1](../images/NEXT-PAGEak.png)
