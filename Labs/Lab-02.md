@@ -4,9 +4,7 @@
 
 ## Lab Scenario
 
-In this task, you will apply the Security configuration to repositories within your organization. This configuration helps enable key security features such as Dependabot, Code Scanning, and Secret Scanning to reduce security risks.
-
-The steps will guide you through enabling these settings, creating a security configuration, and applying it across all repositories.
+In this lab, you will apply security configurations to your organization's repositories to enable key GitHub Advanced Security features—Dependabot, Code Scanning, and Secret Scanning—helping to reduce security risks across your projects.
 
 ## Lab Objectives
 In this lab, you will perform:

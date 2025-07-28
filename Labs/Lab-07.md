@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
- In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
+In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
 ## Lab Objectives
 
@@ -20,8 +20,6 @@ In this lab, you will learn and perform:
 ## Architecture Diagram
 
 ![](../images/arch15a.png)
-
-
    
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  
 
