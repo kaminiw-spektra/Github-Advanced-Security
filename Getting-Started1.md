@@ -1,4 +1,4 @@
-# Getting Started with Your GitHub Advanced Security
+# Securing Repositories with GitHub Advanced Security
 
 ### Overall Estimated Duration: 8 Hours
 
