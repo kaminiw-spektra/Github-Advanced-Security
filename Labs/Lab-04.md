@@ -41,7 +41,9 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    >**Note:** The default value of **fail-on-severity** will work as well, but here we demonstrate how to modify your severity level.
 
    ![github-advisory-database](../images/g7at.png)
+   
    ![github-advisory-database](../images/uncmtatnew.png)
+   
    ![github-advisory-database](../images/mod4-task1-step7-newone1.png)
 
 1. To ensure there are no mistakes in the code, as even a small indentation error can cause issues, you can use the code below and replace it with the existing one.
@@ -149,4 +151,5 @@ In this module, we have completed the following:
 
 Now, click on **Next >>** from the lower right corner to move on to the next page.
             
+
  ![Picture1](../images/NEXT-PAGEak.png)
