@@ -93,6 +93,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 ### Push events to an outside reporting function in the App.
 
+In this task, you will configure GitHub webhooks to send push event data to an Azure Function, enabling automated event-driven integration with external reporting tools.
+
 1. Open a **new InPrivate (Incognito) tab** in your browser and navigate to the Azure Portal at `https://portal.azure.com`.
 
    >**Note:** Please ensure you open a **new InPrivate (Incognito)** browser tab before logging into the Azure Portal to avoid session or credential conflicts.
