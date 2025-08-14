@@ -19,13 +19,15 @@ In this lab, you will perform:
 
 ## Task 1: Creating Security Camapaign
 
+In this task, you will create a security campaign using GitHub Security features to identify and fix critical CodeQL vulnerabilities across repositories. This helps prioritize and remediate high-risk issues at scale using Copilot Autofix, improving codebase security and reducing technical debt.
+
 **Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
 
 1. Select the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization from the top.
 
    ![](../images/T1S1iii.png)
 
-1. Navigate to your organization's **Security** tab.
+1. Click the **Security** tab from the top right corner of the navigation bar
 
    ![Picture1](../images/security-tabat.png)
 
@@ -45,7 +47,7 @@ In this lab, you will perform:
 
    ![](../images/T1S4i.png)
 
-1. Click on **Save as (1)** and select **Published campaign (2)**.
+1. At the top right of the campaigns page, click **Save as (1)**, then select **Published campaign (2)** from the dropdown menu.
 
    ![](../images/T1S5iiinew.png)
 
@@ -71,7 +73,7 @@ In this lab, you will perform:
 
     ![](../images/a42b-1.png)
 
-1. Click on **Commit to new branch.**
+1. Click **Commit to new branch** to save the autofix changes in a new branch for review.
 
     ![](../images/a42c.png)
 
@@ -91,6 +93,8 @@ In this lab, you will perform:
     ![](../images/T1S12iinew.png)
 
 ## Task 2: Tracking Security Campaign
+
+In this task, you will monitor the status of your security campaign to ensure vulnerabilities are being fixed. You'll track open and closed alerts, apply autofixes where available, and manage progress through the campaign dashboard.
 
 When you create a campaign, the campaign tracking view is displayed and the campaign is listed in the sidebar of the **Security** tab for the organization. You can redisplay the campaign tracking view at any time by selecting it in the sidebar under "Campaigns".
 
@@ -113,11 +117,11 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-1. Click on the open alert as metioned below.
+1. Click on the open alert **Resolving XML external entity in user-controlled data** to view the details of the vulnerability.
 
    ![](../images/a48.png)
 
-1. On the selected alert page click on **Commit to new branch**.
+1. On the selected alert page, click **Commit to new branch** to apply the autofix and create a new branch with the changes.
 
    ![](../images/a49a.png)
 
@@ -156,13 +160,15 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
 ## Task 3: Editing and Managing Security Campigns
 
+In this task, you will edit and manage an existing security campaign by updating its details, closing it when completed, or deleting it if no longer needed. This helps keep your campaign list organized and ensures active focus on unresolved security issues.
+
 There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security tab of the organization.
 
 1. On GitHub, navigate to the main page of the organization.
 
    ![Picture1](../images/mod7-task3-step1new.png)
 
-1. Under your organization name, click **Security**.
+1. Under your organization name, Click the **Settings** tab from the top right corner of the navigation bar.
 
    ![Picture1](../images/security-tabat.png)
 

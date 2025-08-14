@@ -48,7 +48,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
    ![new personal acess token](../images/sec10.png)
    ![Picture1](../images/mod5-task1-step2new.png)
 
-1. Once you've generated the token, click the **Copy** icon to the right of the secret value.
+1. Once you've generated the token, click the **Copy** icon next to the token, then **paste** it into Notepad to save it securely.
 
    ![Picture1](../images/token.png)  
 
@@ -60,7 +60,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/ghas-exercise1-4.png) 
 
-1. Click on **Repositories (1)** and select **ghas-bootcamp-javascript (2)**.
+1. Click **Repositories (1)** from the top menu, then select **ghas-bootcamp-javascript (2)** from the list
 
    ![Picture1](../images/T1S7new.png) 
 
@@ -72,7 +72,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![github-advisory-database](../images/image1a.png)
 
-1. Scroll down to **Secret Protection**, where you will see that **Secret Protection** is already enabled, as it has been configured at the organization level.
+1. Scroll down to **Secret Protection**, where you will see that **Secret Protection** is already enabled — indicated by the visible **Disable** button, as it has been configured at the organization level.
 
    ![Picture1](../images/mod2ss1n-1.png)
 
@@ -149,13 +149,13 @@ In this task, you will enable push protection to prevent secrets from being comm
    ![Picture1](../images/sec12a.png)
    ![Picture1](../images/mod5-task1-step2new.png)
 
-1. Once you've generated the token, click on the **"Copy"** icon to the right of the secret value.
+1. Once you've generated the token, click the **Copy icon** next to the token, then paste it into Notepad to save it securely.
 
    ![Picture1](../images/token.png)  
 
 1. Navigate to the **`ghas-bootcamp-javascript`** repository.
   
-1. Click on **_index.js_**. 
+1. Click on the **_index.js_** file from the main file list
 
     ![Picture1](../images/index.png)
 
@@ -220,7 +220,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
       
       > **Note:** You can also refer to the Field Security team's open-source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository, which contains several useful examples.
 
-1. Click on **Pubish pattern**.
+1. Click the **Publish pattern** button at the bottom of the dry run results.
 
    ![Picture1](../images/T3S4a.png)
 
@@ -240,7 +240,7 @@ In this task, we delved into comprehending the outcomes of secret scanning.
 
 1. We created custom secret patterns to uncover specific types of sensitive information.
 
-Please feel free to go through the documents for further understanding:[Security](https://github.blog/category/security/)
+Please feel free to go through the documents for further understanding: [Security](https://github.blog/category/security/)
 
 ## Summary
 

@@ -37,7 +37,7 @@ Applying the security configuration to all repositories in your organization
 
    ![Select Organization](../images/ghas-exercise1-4.png)
 
-1. Click on the **Settings** tab.
+1. From the top navigation bar, go to the top right corner and click on the **Settings** tab
 
    ![Repository Settings](../images/T1S4.png)
 
