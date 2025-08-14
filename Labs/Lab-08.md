@@ -186,9 +186,9 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
 1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
 
-- **Close campaign** to remove it from the active campaigns list and display it on the Closed campaigns view.
+   - **Close campaign** to remove it from the active campaigns list and display it on the Closed campaigns view.
 
-- **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
+   - **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
 
    ![](../images/T3S6.png)
 

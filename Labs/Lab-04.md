@@ -18,6 +18,8 @@ In this lab, you will perform:
 
 ## Task 1: Use the dependency review action to stop a pull request that contains the log vulnerability
 
+In this task, you will configure the Dependency Review GitHub Action to automatically block pull requests containing vulnerable dependencies, such as the Log4j vulnerability, ensuring secure code is merged into your repository.
+
 ### Dependency Review Action
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.

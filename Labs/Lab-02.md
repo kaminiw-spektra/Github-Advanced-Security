@@ -19,6 +19,8 @@ In this lab, you will perform:
 
 ## Task 1: Applying security settings in your organization.
 
+In this task, you will apply GitHub’s recommended security settings across your organization’s repositories to enable key features like Dependabot, secret scanning, and code scanning, helping reduce security risks and improve overall repository protection.
+
 ### About the security configuration
 
 The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low- and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
@@ -111,6 +113,8 @@ Applying the security configuration to all repositories in your organization
    >**Note:** Here, you will find that the security features are enabled for the repository present in the organization. You will also find this in other repositories, and you are free to check them as well.
 
 ## Task 2: Activate Actions for All Repositories
+
+In this task, you will enable GitHub Actions for all repositories in your organization by configuring settings to allow all actions and reusable workflows, ensuring seamless automation of build, test, and deployment pipelines.
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that run tests whenever you push a change to your repository, or that deploy merged pull requests to production. You will learn how to enable GitHub Actions for repositories to ensure workflows run seamlessly. This includes configuring the settings to allow all actions and reusable workflows.
 

@@ -117,8 +117,6 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 >**Note:** Reusing the same secret from Task 1 may not trigger push protection if it was already committed; consider demonstrating with a new, slightly altered secret.
 
-In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
-
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings (1)**, click on **Advanced security (2)** under Securilty. 
 
    ![github-advisory-database](../images/g12new1.png)
