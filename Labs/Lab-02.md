@@ -70,6 +70,7 @@ Applying the security configuration to all repositories in your organization
 1. Scroll down to the **Dependency scanning** section. You'll find that all options are **Enabled** by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
 
    ![dep1](../images/dep1a.png)
+   
    ![dep2](../images/dep3a.png)
 
    >**Note:** In this step, we will leave the settings at their default values.
@@ -160,4 +161,5 @@ In this module, we have completed the following:
 
 Now, click on **Next >>** from the lower right corner to move on to the next page.
             
+
  ![Picture1](../images/NEXT-PAGEak.png)
