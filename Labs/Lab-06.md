@@ -40,12 +40,12 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/token1a.png)
    
-
 1. Give your secret a name **Secret01 (1)** in the **Note** field, set the **Expiration** to **Custom (2)** and choose the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token (4)** to create your personal access token.
 
    >**Note:** If **Secret01** and **Secret02** already exist, delete them and recreate the secrets.
 
    ![new personal acess token](../images/sec10.png)
+   
    ![Picture1](../images/mod5-task1-step2new.png)
 
 1. Once you've generated the token, click the **Copy** icon next to the token, then **paste** it into Notepad to save it securely.
@@ -87,7 +87,9 @@ Secret scanning automatically scans your entire Git history on all branches pres
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
 
    ![Picture1](../images/indexnew.png)
+   
    ![Picture1](../images/pencilnew1.png)
+   
    ![Picture1](../images/T1S12inew.png)
 
 1. Click on **Commit changes** to commit directly to default branch.
@@ -107,6 +109,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
    >**Note:** There is a chance that it will be automatically verified, and you will directly see it as an **Active Secret**.
 
    ![Picture1](../images/mod1.4nnew.png)
+   
    ![Picture1](../images/mod1.4nanew.png)
 
    > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
@@ -120,6 +123,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings (1)**, click on **Advanced security (2)** under Securilty. 
 
    ![github-advisory-database](../images/g12new1.png)
+   
    ![github-advisory-database](../images/image1anew.png)
 
 1. Scroll down to **Push protection** under Secret Protection and click **Enable**.
@@ -145,6 +149,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 1. Give your secret a name **Secret02 (1)** in the **Note** field, set the **Expiration** to **Custom (2)** and choose the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token (4)** to create your personal access token.
 
    ![Picture1](../images/sec12a.png)
+   
    ![Picture1](../images/mod5-task1-step2new.png)
 
 1. Once you've generated the token, click the **Copy icon** next to the token, then paste it into Notepad to save it securely.
@@ -160,6 +165,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 1. Click the **pencil icon (1)** on the top-right of the code block to edit it, and add **`var secret2 = "Your-Secret-Value"` (2)** to the code. Commit the changes by clicking on **Commit changes... (3)**. In the new window that opens, click on **Commit changes (4)** again to confirm and push the changes.    
 
    ![Picture1](../images/pencilnew2.png)
+   
    ![Picture1](../images/T2S11inew.png)
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 8.     
@@ -195,6 +201,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
 1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings (1)** tab of the repo, click on **Advanced security (2)**.
 
    ![github-advisory-database](../images/g12new.png)
+   
    ![github-advisory-database](../images/image1anew.png)
 
 1. Scroll down to **Secret Protection** section and then click on the **New pattern** button.
@@ -210,6 +217,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
    - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
    - **Test string**:  `gH4$kP!2w_ ` **(6)**
    - Click on **Save and dry run (7)**
+     
      ![push-protection1](../images/T3S3.png)
       
       > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
@@ -253,4 +261,6 @@ In this lab, we have completed the following:
 
 Now, click on **Next >>** from the lower right corner to move on to the next page.
             
+
  ![Picture1](../images/NEXT-PAGEak.png)
+

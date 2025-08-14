@@ -90,6 +90,7 @@ In this task, you will create a security campaign using GitHub Security features
 12. Click on **Merge pull request (1)** to finalize and integrate the changes into the main branch, then click on **Confirm merge (2)**.
 
     ![](../images/T1S12iiinew.png)
+    
     ![](../images/T1S12iinew.png)
 
 ## Task 2: Tracking Security Campaign
@@ -138,6 +139,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 1. Click on **Merge pull request (1)** to finalize and integrate the changes into the main branch, then click on **Confirm merge (2)**.
 
     ![](../images/seccamp6bnew.png)
+   
     ![](../images/T2S7new.png)
 
 1. Now try refreshing the page.
@@ -204,3 +206,4 @@ In this lab you have completed the following:
 Now, click on **Next >>** from the lower right corner to move on to the next page.
             
  ![Picture1](../images/NEXT-PAGEak.png)
+
