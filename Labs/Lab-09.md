@@ -7,6 +7,7 @@
 In this lab, you will focus on scaling GitHub Advanced Security (GHAS) adoption by aligning rollout strategies, leveraging the security overview dashboard for insights, integrating webhooks with external tools like SIEM, and implementing repository rulesets to enforce branch and tag policies—enhancing security and compliance across all repositories.
 
 ## Lab Objectives
+
 In this lab, you will perform:
 
 - Task 1: How to grow adoption? How to communicate about GHAS internally?  
@@ -68,7 +69,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](../images/org-new1.png) 
 
-1. Navigate to the **security** tab of your **GitHub Organization**.
+1. Click the **Security** tab from the top right corner of the navigation bar.
 
    ![Picture1](../images/T2S3.png)
 
@@ -116,7 +117,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](../images/functionapp.png)
 
-1. Click on **+ Create**.
+1. From the top-left corner of the Function App page, click **+ Create** to start creating a new Function App
 
    ![Picture1](../images/mod8-task3-step6new.png)
 
@@ -162,7 +163,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](../images/fuctionabc.png)
 
-1. Now, click on the **Invocations** tab — it should appear as shown in the image below.
+1. From the top menu of your Function App, click on the **Invocations tab** to view recent function execution traces.
 
     ![Picture1](../images/T3S13.png)
 
@@ -217,7 +218,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
       >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
 
-11. Now go to the **Repositories (1)** section and click on **New Respsitory (2)**.
+11. From the top menu, click on **Repositories (1)** in the left pane, then click on the **New repository (2)** button on the right side to create a new repository.
 
     ![Picture1](../images/T3S19new.png)
 
@@ -227,7 +228,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
-13. Click on **Add file** **(1)** (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** **(2)**.
+13. From the repository page, click on **Add file (1)** (or the **+ icon**) in the top right, then select **Create new file (2)** from the dropdown.
 
      ![Picture1](../images/T3S21.png)
 
@@ -319,11 +320,11 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](../images/lab7testwebhook8.png)
 
-13. Navigate back to **your organization**, and click on **settings**.
+13. Navigate back to **your organization**, and click on **Settings**.
 
      ![Repository Settings](../images/T3S15.png)
 
-14. Click on **Webhooks** from the left Navigation pane.
+14. From the left navigation pane, click on **Webhooks**.
 
       ![](../images/mod8-task3-step30new.png)
 
@@ -386,6 +387,7 @@ You can create rulesets to control how users interact with selected branches and
    - **Disabled**: Your ruleset will not be enforced.
 
       ![](../images/rulesetnew.png) 
+
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
 For more details, refer to the [GitHub documentation on rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
@@ -429,3 +431,7 @@ In this lab, you have completed the following:
 + Talked about repository rulesets and how they can be used at scale 
 
 ## You have successfully completed this Hands-on lab.
+
+By completing this hands-on lab on Securing Repositories with GitHub Advanced Security, you’ve developed practical skills in securing software projects throughout the development lifecycle. You enabled tools like dependency scanning, secret scanning with push protection, and code scanning to identify and remediate vulnerabilities early. You also explored Copilot Autofix and security campaigns to address issues at scale, reducing security debt and improving code quality. Finally, by integrating GitHub with external systems using Azure Function Apps and webhooks, you learned how to automate responses to repository events in real time. This lab has equipped you with essential techniques to build, maintain, and scale secure, resilient, and compliant repositories within your organization.
+
+

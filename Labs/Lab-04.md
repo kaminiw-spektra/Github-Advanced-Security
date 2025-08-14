@@ -118,7 +118,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](../images/T1S8new.png)
 
-1. Click on **Create pull request**. 
+1. Click the green **Create pull request** button on the right side of the comparison section.
 
    ![github-advisory-database](../images/T1S9.png)
 

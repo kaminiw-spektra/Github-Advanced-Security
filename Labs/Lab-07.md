@@ -45,7 +45,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![](../images/comment1new.png) 
 
-1. Select **Create a new branch (1)** then click on **Propose changes (2)**  .
+1. Select **Create a new branch (1)** then click on **Propose changes (2)**.
  
    ![github-advisory-database](../images/T1.1S6new.png)
 
@@ -69,11 +69,11 @@ In this task, you will create a new Python file in the repository containing cod
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 
-1. Click on the **Add file (1)** button and select **+ Create new file (2)**.
+1. Click **Add file (1)** and choose **+ Create new file (2)** from the dropdown.
 
    ![](../images/file1.png)
 
-1. Name your file (e.g., app.py).
+1. Name your file (e.g., **app.py**).
 
 1. Copy and paste the below code:
 
@@ -128,6 +128,8 @@ In this task, you will create a new Python file in the repository containing cod
 
 ## Task 3: Run a code scan
 
+In this task, you will open the Actions tab, find the CodeQL workflow, and check that it ran after your commit. Then, review the scan results to see if any security issues were found
+
 1. In the repository page, navigate to **Actions** tab to view the workflow.
 
    ![](../images/action1a.png) 
@@ -148,6 +150,8 @@ In this task, you will create a new Python file in the repository containing cod
      > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
 ## Task 4: Apply autofixes to vulnerabilities
+
+In this task, you will review detected vulnerabilities in your repository and apply autofixes to automatically resolve security issues, then commit and merge the changes to secure your code.
 
 1. Navigate to the **Security (1)** tab in your repository, and then click on **Code scanning (2)**.
 
