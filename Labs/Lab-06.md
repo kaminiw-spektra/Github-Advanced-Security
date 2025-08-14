@@ -40,12 +40,12 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/token1a.png)
    
-
 1. Give your secret a name **Secret01 (1)** in the **Note** field, set the **Expiration** to **Custom (2)** and choose the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token (4)** to create your personal access token.
 
    >**Note:** If **Secret01** and **Secret02** already exist, delete them and recreate the secrets.
 
    ![new personal acess token](../images/sec10.png)
+   
    ![Picture1](../images/mod5-task1-step2new.png)
 
 1. Once you've generated the token, click the **Copy** icon next to the token, then **paste** it into Notepad to save it securely.
@@ -253,4 +253,5 @@ In this lab, we have completed the following:
 
 Now, click on **Next >>** from the lower right corner to move on to the next page.
             
+
  ![Picture1](../images/NEXT-PAGEak.png)
