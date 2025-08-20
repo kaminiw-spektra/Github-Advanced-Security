@@ -1,16 +1,16 @@
 # Module 06: Code Scanning
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 90 Minutes
 
 ## Lab Scenario
 
-In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
+In this module, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
 ## Lab Objectives
 
 ### Implementing GitHub Advanced Security for Your Organization
 
-In this lab, you will learn and perform:
+In this module, you will learn and perform:
 
 - Task 1: Add some vulnerable code via a pull request and view the scan results in the PR 
 - Task 2: Create a code with potencial security vulnerabilities
@@ -189,7 +189,7 @@ In this task, you will review detected vulnerabilities in your repository and ap
 
 ## Summary
 
-In this lab you have completed the following:
+In this module, you have completed the following:
 
 - Learned how CodeQL is different from other static analysis tools
 - Added some vulnerable code via a pull request and viewed the scan results in the PR.
@@ -197,8 +197,6 @@ In this lab you have completed the following:
 - Run a code scan
 - Apply autofixes to fix code vulnerabilities
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
+### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
             
  ![Picture1](../images/NEXT-PAGEak.png)

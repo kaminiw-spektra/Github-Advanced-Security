@@ -1,13 +1,13 @@
 # Module 05: Secret Scanning
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 60 Minutes
 
 ## Lab Scenario
 
-In this lab, you will enable GitHub Secret Scanning for an organization, implement push protection, create custom secret patterns, and analyze scanning results to understand how secret scanning helps detect and block sensitive information in code.
+In this module, you will enable GitHub Secret Scanning for an organization, implement push protection, create custom secret patterns, and analyze scanning results to understand how secret scanning helps detect and block sensitive information in code.
 
 ## Lab Objectives
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: Demonstrate Secret Scanning Functionality
 - Task 2: Turn on push protection and try pushing a new secret (a GitHub token) into a repository
@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](../images/arch10.PNG)
+![](../images/arch10new.png)
 
 ## Task 1: Demonstrate Secret Scanning Functionality
 
@@ -250,17 +250,14 @@ Please feel free to go through the documents for further understanding: [Securit
 
 ## Summary
 
-In this lab, we have completed the following:
+In this module, you have completed the following:
 
  - Demonstrate Secret Scanning Functionality
  - Turned on push protection and tried pushing a new secret (a GitHub token) into a repository
  - Created a custom secret pattern
  - Understanding the results 
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-            
+### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
 
  ![Picture1](../images/NEXT-PAGEak.png)
 
