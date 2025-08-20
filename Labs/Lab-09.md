@@ -434,6 +434,7 @@ In this module, you have completed the following:
 
 ## You have successfully completed this Hands-on lab.
 
-By completing this hands-on lab on Securing Repositories with GitHub Advanced Security, you gained practical experience in implementing and managing GHAS features across repositories and organizations. You explored core components like code scanning, secret scanning, Dependabot, and dependency review, while also configuring organization-wide security settings, Copilot Autofix, push protection, and security dashboards. Additionally, you learned how to scale security using repository rulesets and integrate with external tools. These skills are essential for securing software projects in academic, enterprise, and open-source environments.
+By completing this hands-on lab on **Securing Repositories with GitHub Advanced Security**, you gained practical experience in implementing and managing GHAS features across repositories and organizations. You explored core components like code scanning, secret scanning, Dependabot, and dependency review, while also configuring organization-wide security settings, Copilot Autofix, push protection, and security dashboards. Additionally, you learned how to scale security using repository rulesets and integrate with external tools. These skills are essential for securing software projects in academic, enterprise, and open-source environments.
+
 
 
