@@ -1,13 +1,13 @@
 # Module 07: Security Campaign
 
-### Estimated Duration: 30 minutes
+### Estimated Duration: 30 Minutes
 
 ## Lab Scenario
 
-In this lab, we’ll cover a series of tasks designed to provide a comprehensive understanding of creating, launching, tracking, and managing security campaigns.
+In this module, we’ll cover a series of tasks designed to provide a comprehensive understanding of creating, launching, tracking, and managing security campaigns.
 
 ## Lab Objectives
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: Creating security camapaign
 - Task 2: Tracking Security Campaign
@@ -195,15 +195,14 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
    ![](../images/T3S6.png)
 
 ## Summary
-In this lab you have completed the following:
+
+In this module, you have completed the following:
 
 - Created a campaign from a template
 - Tracked Security Campaigns
 - Edited and Managed Security Campigns
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-            
+### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
+           
  ![Picture1](../images/NEXT-PAGEak.png)
 

@@ -1,13 +1,13 @@
 # Module 02: Enable Github Security configuration on your organization
 
-### Estimated Duration: 20 minutes
+### Estimated Duration: 20 Minutes
 
 ## Lab Scenario
 
-In this lab, you will apply security configurations to your organization's repositories to enable key GitHub Advanced Security features—Dependabot, Code Scanning, and Secret Scanning—helping to reduce security risks across your projects.
+In this module, you will apply security configurations to your organization's repositories to enable key GitHub Advanced Security features—Dependabot, Code Scanning, and Secret Scanning—helping to reduce security risks across your projects.
 
 ## Lab Objectives
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: Applying security settings in your organization
 - Task 2: Activate Actions for All Repositories
@@ -151,15 +151,12 @@ In this task, you will navigate to your organization’s **Settings** and enable
 
 ## Summary
 
-In this module, we have completed the following:
+In this module, you have completed the following:
 
 - Applying security settings in your organization
 - Activate Actions for All Repositories
 - Enabled Copilot Autofix for Code Scanning
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-            
-
+### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
+       
  ![Picture1](../images/NEXT-PAGEak.png)

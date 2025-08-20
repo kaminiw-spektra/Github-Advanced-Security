@@ -1,13 +1,13 @@
 # Module 03: Exploring Dependabot, Secret Scanning, and CodeQL in GHAS [Read Only]
 
-### Estimated Duration: 30 minutes
+### Estimated Duration: 30 Minutes
 
 ## Lab Scenario
 
-In this lab, you will explore Dependabot, Secret Scanning, and Code Scanning, gaining a deeper understanding of how each tool enhances software security and project maintenance within GitHub Advanced Security.
+In this module, you will explore Dependabot, Secret Scanning, and Code Scanning, gaining a deeper understanding of how each tool enhances software security and project maintenance within GitHub Advanced Security.
 
 ## Lab Objectives
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: Depandabot and its features
 - Task 2: Secret Scanning and its features
@@ -134,14 +134,14 @@ CodeQL is a programming language and associated tools that treat code like data.
 1. [Secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
 
 ## Summary
-In this lab, you have completed the following:
+
+In this module, you have completed the following:
 
 + Depandabot and its features.
 + Secret Scanning and its features.
 + Code Scanning. 
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
+### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
             
+
  ![Picture1](../images/NEXT-PAGEak.png)

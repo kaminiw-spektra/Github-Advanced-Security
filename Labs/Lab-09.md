@@ -1,14 +1,14 @@
 # Module 08: Scaling out GitHub Advanced Security (Optional)
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 60 Minutes
 
 ## Lab Scenario
 
-In this lab, you will focus on scaling GitHub Advanced Security (GHAS) adoption by aligning rollout strategies, leveraging the security overview dashboard for insights, integrating webhooks with external tools like SIEM, and implementing repository rulesets to enforce branch and tag policies—enhancing security and compliance across all repositories.
+In this module, you will focus on scaling GitHub Advanced Security (GHAS) adoption by aligning rollout strategies, leveraging the security overview dashboard for insights, integrating webhooks with external tools like SIEM, and implementing repository rulesets to enforce branch and tag policies—enhancing security and compliance across all repositories.
 
 ## Lab Objectives
 
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: How to grow adoption? How to communicate about GHAS internally?  
 - Task 2: View the security overview dashboard and reports 
@@ -425,7 +425,7 @@ For more details, refer to the [GitHub documentation on rulesets](https://docs.g
 
 ## Summary
 
-In this lab, you have completed the following:
+In this module, you have completed the following:
 
 + How to grow adoption? How to communicate about GHAS internally?  
 + Viewed the security overview dashboard and reports 
@@ -434,6 +434,8 @@ In this lab, you have completed the following:
 
 ## You have successfully completed this Hands-on lab.
 
-By completing this hands-on lab on Securing Repositories with GitHub Advanced Security, you’ve developed practical skills in securing software projects throughout the development lifecycle. You enabled tools like dependency scanning, secret scanning with push protection, and code scanning to identify and remediate vulnerabilities early. You also explored Copilot Autofix and security campaigns to address issues at scale, reducing security debt and improving code quality. Finally, by integrating GitHub with external systems using Azure Function Apps and webhooks, you learned how to automate responses to repository events in real time. This lab has equipped you with essential techniques to build, maintain, and scale secure, resilient, and compliant repositories within your organization.
+By completing this hands-on lab on **Securing Repositories with GitHub Advanced Security**, you gained practical experience in implementing and managing GHAS features across repositories and organizations. You explored core components like code scanning, secret scanning, Dependabot, and dependency review, while also configuring organization-wide security settings, Copilot Autofix, push protection, and security dashboards. Additionally, you learned how to scale security using repository rulesets and integrate with external tools.
+
+
 
 

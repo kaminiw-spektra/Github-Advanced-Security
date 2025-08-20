@@ -1,13 +1,13 @@
 # Module 01: GitHub Advanced Security Overview [Read Only]
 
-### Estimated Duration: 20 minutes
+### Estimated Duration: 20 Minutes
 
 ## Lab Scenario
 
-In this lab, you will get an overview of GitHub Advanced Security (GHAS) and its key components—Secret Scanning, Code Scanning, and Dependabot—while learning how to enable and use them in a GitHub repository.
+In this module, you will get an overview of GitHub Advanced Security (GHAS) and its key components—Secret Scanning, Code Scanning, and Dependabot—while learning how to enable and use them in a GitHub repository.
 
 ## Lab Objectives
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: What is GitHub Advanced Security? 
 - Task 2: What are the components of GitHub Advanced Security?  
@@ -178,14 +178,13 @@ Please feel free to go through the links for further understanding:
 4. [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features)
 
 ## Summary
-In this lab, you have completed the following:
+
+In this module, you have completed the following:
 
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
 + What is the value of using GHAS? 
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-            
+### You have successfully completed the module. Now click on **Next >>** from the lower right corner to move on to the next page.
+         
  ![Picture1](../images/NEXT-PAGEak.png)

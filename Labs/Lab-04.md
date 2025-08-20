@@ -1,14 +1,14 @@
 # Module 04: Software Composition Analysis
 
-### Estimated Duration: 40 minutes
+### Estimated Duration: 40 Minutes
 
 ## Lab Scenario
 
-In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
+In this module, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
 
 ## Lab Objectives
 
-In this lab, you will perform:
+In this module, you will perform:
 
 - Task 1: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
@@ -144,12 +144,10 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 ## Summary
 
-In this module, we have completed the following:
+In this module, you have completed the following:
+
 -  Used the dependency review action to stop a Pull Request that contains the log vulnerability
 
-### You have successfully completed the lab.
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-            
+### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
 
  ![Picture1](../images/NEXT-PAGEak.png)
