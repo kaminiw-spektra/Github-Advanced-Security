@@ -1,6 +1,6 @@
 # Module 03: Exploring Dependabot, Secret Scanning, and CodeQL in GHAS [Read Only]
 
-### Estimated Duration: 30 Mnutes
+### Estimated Duration: 30 Minutes
 
 ## Lab Scenario
 
@@ -143,4 +143,5 @@ In this module, you have completed the following:
 
 ### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
             
+
  ![Picture1](../images/NEXT-PAGEak.png)
