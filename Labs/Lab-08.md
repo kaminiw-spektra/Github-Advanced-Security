@@ -23,7 +23,7 @@ In this task, you will create a security campaign using GitHub Security features
 
 **Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
 
-1. Select the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization from the top.
+1. Select the **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** organization from the top.
 
    ![](../images/T1S1iii.png)
 
@@ -170,7 +170,7 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
    ![Picture1](../images/mod7-task3-step1new.png)
 
-1. Under your organization name, Click the **Settings** tab from the top right corner of the navigation bar.
+1. Under your organization name, Click the **Security** tab from the top right corner of the navigation bar.
 
    ![Picture1](../images/security-tabat.png)
 
