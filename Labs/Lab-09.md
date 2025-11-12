@@ -65,7 +65,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](../images/org.png) 
      
-1. Select **ghas-bootcamp-xxxx-xx-xx-** from **organizations**.
+1. Select **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from **organizations**.
 
    ![Picture1](../images/org-new1.png) 
 
