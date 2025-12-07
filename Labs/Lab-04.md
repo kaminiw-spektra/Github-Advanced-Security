@@ -36,7 +36,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. In the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **# (1)** as shown in the below screenshot and click on **Commit changes.. (2)** in the top right corner.
 
-   >**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: low, moderate, high, critical** is directly below the **comment-summary-in-pr: always** line, as shown below:
+   >**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: moderate** is directly below the **comment-summary-in-pr: always** line, as shown below:
 
    >**Note:** The default value of **fail-on-severity** will work as well, but here we demonstrate how to modify your severity level.
 

@@ -61,9 +61,9 @@ Issue Resolution: MTTR can track the average time from when an issue is reported
 
 In this task, you will explore the GHAS security overview dashboard and reports to gain insights into your repository's security posture.
 
-1. Go to your **profile icon** in the top right corner, and then select **Your organizations**.
+1. Go to your **profile icon** in the top right corner, and then select **Organizations**.
 
-   ![Picture1](../images/org.png) 
+   ![Picture1](../images/T1S5.png) 
      
 1. Select **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from **organizations**.
 
@@ -126,6 +126,10 @@ In this task, you will configure GitHub webhooks to send push event data to an A
 1. From the Create Function App tab, select **Consumption (1)** and click on **Select (2)**.
 
    ![Picture1](../images/ghas-exercise1-9a.png)
+
+   >**Note:** Click on **Confirm** during pop-up.
+
+   ![Picture1](../images/ghas-exercise1-9zt.png)
 
 1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create (9)**.
 
