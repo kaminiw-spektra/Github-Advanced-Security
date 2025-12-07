@@ -52,7 +52,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](../images/token.png)  
 
-1. Go to your profile on top of the right hand, and then select **Your organizations**.
+1. Go to your profile on top of the right hand, and then select **Organizations**.
 
    ![Picture1](../images/T1S5.png) 
 

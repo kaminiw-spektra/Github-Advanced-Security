@@ -31,7 +31,7 @@ Applying the security configuration to all repositories in your organization
 
    ![Profile Menu](../images/T1S1.png)
 
-1. Select **Your organizations** from the dropdown menu.
+1. Select **Organizations** from the dropdown menu.
 
    ![Your Organizations](../images/T1S5.png)
 
@@ -55,7 +55,7 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/mod1org5new.png)
 
-1. In the **Secret scanning** section. You'll find that some options are enabled by default. It is recommended to leave these settings unchanged.
+1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
    ![Code Security Configurations](../images/mod1org6a-1.png)
 
