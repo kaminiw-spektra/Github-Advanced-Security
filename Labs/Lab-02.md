@@ -51,7 +51,7 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/mod1org4-1.png)
 
-1. The **Name** field should be filled with `Security_settings_enable`**(1)**, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`**(2)**, offering a brief overview of what the configuration will accomplish.
+1. The **Name** field should be filled with **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** **(1)**, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`**(2)**, offering a brief overview of what the configuration will accomplish.
 
    ![Code Security Configurations](../images/mod1org5new.png)
 
@@ -83,13 +83,13 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/saveconf.png)
 
-1. On the **Apply Configuration** page, select **4 of 5 repositories (1)**, making sure to exclude the **.github** public repository. Then, click on **Apply configuration (2)** to apply the settings across all repositories. Next, select **Security_settings_enable (3)** and click **Apply (4)** when prompted. This will activate Security alerts for all repositories in your organization, helping to detect any exposed secrets or sensitive information.
+1. On the **Apply Configuration** page, select **4 of 5 repositories (1)**, making sure to exclude the **.github** public repository. Then, click on **Apply configuration (2)** to apply the settings across all repositories. Next, select **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** **(3)** and click **Apply (4)** when prompted. This will activate Security alerts for all repositories in your organization, helping to detect any exposed secrets or sensitive information.
 
    ![Code Security Configurations](../images/a38a.png)
 
    ![Code Security Configurations](../images/a38bnew1.png)
 
-1. You will find that the organization configurations for **Security_settings_enable** are enforced on 4 repositories.
+1. You will find that the organization configurations for **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** are enforced on 4 repositories.
 
    ![Code Security Configurations](../images/a39a.png)
 

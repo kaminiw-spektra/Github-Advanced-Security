@@ -100,7 +100,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
         ![Picture1](./images/GS3.png)
  
-1. Next, provide your password to login:
+1. Next, provide your **Temporary password** to login:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
