@@ -25,6 +25,8 @@ You'll enable secret scanning with push protection, create custom secret pattern
 
 ## Pre-requisites
 
+- An active Microsoft Azure subscription to deploy and manage Azure resources.
+- An Azure Entra ID user account with sufficient permissions to create and manage resources within the Azure subscription.
 - Basic knowledge of GitHub
 - Fundamental understanding of security principles, including vulnerability management and secure coding practices
 - Familiarity with navigating and managing code repositories
