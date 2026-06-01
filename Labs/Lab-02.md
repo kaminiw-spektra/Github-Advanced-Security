@@ -33,7 +33,7 @@ Applying the security configuration to all repositories in your organization
 
 1. Select **Organizations** from the dropdown menu.
 
-   ![Your Organizations](../images/T1S5.png)
+   ![Your Organizations](../images/T1s5.png)
 
 1. Choose **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from the list of organizations.
 
@@ -41,15 +41,15 @@ Applying the security configuration to all repositories in your organization
 
 1. From the top navigation bar, go to the top right corner and click on the **Settings** tab
 
-   ![Repository Settings](../images/T1S4.png)
+   ![Repository Settings](../images/T1s4.png)
 
 1. In the Settings menu, click-on **Configurations (2)** under **Advanced Security (1)** from the Security section.
 
    ![Code Security Configurations](../images/T1S5iinew.png)
 
-1. Click on **New Configuration** to start creating a new security configuration for the repository.
+1. Click on **New Configuration** to start creating a Advance Security configuration for the repository.
 
-   ![Code Security Configurations](../images/mod1org4-1.png)
+   ![Code Security Configurations](../images/nc1.png)
 
 1. The **Name** field should be filled with **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** **(1)**, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`**(2)**, offering a brief overview of what the configuration will accomplish.
 
@@ -57,21 +57,21 @@ Applying the security configuration to all repositories in your organization
 
 1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
-   ![Code Security Configurations](../images/mod1org6a-1.png)
+   ![Code Security Configurations](../images/mod1.png)
 
 1. Leave the **Alerts** option set to **Enabled (1)**, and change the remaining options to **Not set (2)**.
 
-   ![Code Security Configurations](../images/mod1org6-1new1.png)
+   ![Code Security Configurations](../images/mod2.png)
 
 1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is **Enabled**.
 
-   ![Code Security Configurations](../images/codesec.png)
+   ![Code Security Configurations](../images/codesecnew.png)
 
 1. Scroll down to the **Dependency scanning** section. You'll find that all options are **Enabled** by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
 
-   ![dep1](../images/dep1a.png)
+   ![dep1](../images/dep1an.png)
    
-   ![dep2](../images/dep3a.png)
+   ![dep2](../images/dep3an.png)
 
    >**Note:** In this step, we will leave the settings at their default values.
 
@@ -97,15 +97,15 @@ Applying the security configuration to all repositories in your organization
 
 1. In the **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** organization, click on **Repositories** from the top navigation pane.
 
-   ![github-advisory-database](../images/T1S16.png)
+   ![github-advisory-database](../images/T1s2.png)
 
 1. From the list of repositories, click on **ghas-bootcamp-WebGoat** to begin working through this module. 
 
    ![github-advisory-database](../images/mod3a.1.png)
 
-1. To review, navigate to your repository’s **Security** tab.
+1. To review, navigate to your repository’s **Security and quality** tab.
 
-   ![Picture1](../images/security-tabat.png)
+   ![Picture1](../images/stnew.png)
 
 1. Here, you can review your alerts in the security overview.
 
@@ -125,7 +125,7 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 1. Click the **Settings** tab located in the top navigation bar.
 
-   ![Repository Settings](../images/T1S4.png)
+   ![Repository Settings](../images/st1new.png)
 
 1. In the Settings menu, under the **Code, planning, and automation** section, click **Actions (1)**, and then select **General (2)**.
 
@@ -133,7 +133,7 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 1. Select **Allow all actions and reusable workflows (1)**, and then click **Save (2)** to apply the changes.
 
-   ![github-advisory-database](../images/actionsn.png)
+   ![github-advisory-database](../images/acnew.png)
 
    >**Note:** Make sure to click on the **Save** button, even if **Allow all actions and reusable workflows** is already selected.
 
@@ -147,7 +147,7 @@ In this task, you will navigate to your organization’s **Settings** and enable
 
 1. Under the **Code Scanning** section, please ensure that **Copilot Autofix** is enabled across your entire organization.
 
-   ![Repository Settings](../images/mod1orgbnew.png)
+   ![Repository Settings](../images/mod4new.png)
 
 ## Summary
 
@@ -159,4 +159,4 @@ In this module, you have completed the following:
 
 ### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
        
- ![Picture1](../images/NEXT-PAGEak.png)
+ ![Picture1](../images/np3.png)

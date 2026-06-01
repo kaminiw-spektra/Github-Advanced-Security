@@ -27,13 +27,13 @@ In this task, you will create a security campaign using GitHub Security features
 
    ![](../images/T1S1iii.png)
 
-1. Click the **Security** tab from the top right corner of the navigation bar
+1. Click the **Security and quality** tab from the top right corner of the navigation bar
 
-   ![Picture1](../images/security-tabat.png)
+   ![Picture1](../images/stnew.png)
 
 1. In the left sidebar, click on the **Campaigns (1)**, click on **Create campaign (2)** and select **From template (3)**.
 
-    ![](../images/T1S3.png)
+    ![](../images/T1s3.png)
 
 1. Choose **Critical CodeQL Alert** template to use for the campaign.
 
@@ -192,7 +192,7 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
    - **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
 
-   ![](../images/T3S6.png)
+      ![](../images/T3S6.png)
 
 ## Summary
 
@@ -204,5 +204,5 @@ In this module, you have completed the following:
 
 ### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
            
- ![Picture1](../images/NEXT-PAGEak.png)
+ ![Picture1](../images/np8.png)
 
