@@ -54,7 +54,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Go to your profile on top of the right hand, and then select **Organizations**.
 
-   ![Picture1](../images/T1S5.png) 
+   ![Picture1](../images/T1s5.png) 
 
 1. Select **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from organizations.
 
@@ -66,7 +66,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. In the ghas-bootcamp-javascript repository navigate to **Settings** from the top navigation pane.
 
-   ![github-advisory-database](../images/g12.png)
+   ![github-advisory-database](../images/sp.png)
 
 1. From the left navigation pane, click on **Advanced Security**.
 
@@ -80,7 +80,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Navigate to **Code** from the top navigation pane.
 
-   ![Picture1](../images/mod2code1.png)
+   ![Picture1](../images/code.png)
    
 1. Open the **_index.js_ (1)** file and click the **pencil icon (2)** at the top-right of the code block to edit it. Add **` var secret = "Your-Secret-Value"` (3)** to the code, and click on **Commit changes (4)**.
 
@@ -98,7 +98,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Then navigate to **Security (1)** from the top menu, expand the **Secret scanning (2)** section, and click on **Default (3)** to view the list of detected secrets. This will display any exposed secrets, such as a **GitHub Personal Access Token (4)**, and show whether it is still valid or publicly leaked.
 
-   ![Picture1](../images/img2a.png)
+   ![Picture1](../images/img2new.png)
 
    > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Advanced Security** option from the left navigation pane to view the option.
    
@@ -259,5 +259,5 @@ In this module, you have completed the following:
 
 ### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
 
- ![Picture1](../images/NEXT-PAGEak.png)
+ ![Picture1](../images/np6.png)
 

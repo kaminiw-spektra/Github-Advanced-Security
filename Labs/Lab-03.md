@@ -144,4 +144,4 @@ In this module, you have completed the following:
 ### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
             
 
- ![Picture1](../images/NEXT-PAGEak.png)
+ ![Picture1](../images/np4.png)
