@@ -2,6 +2,10 @@
 
 ### Overall Estimated Duration: 8 Hours
 
+## Lab Scenario
+
+Contoso Health Services plans to strengthen repository security and establish secure development practices using GitHub Advanced Security (GHAS). Before enforcing security controls across repositories, the organization must configure dependency scanning, secret scanning, code scanning, and automated remediation workflows. In this lab, you will act as a Security Engineer responsible for enabling and validating GitHub Advanced Security features, identifying vulnerabilities and exposed secrets, and integrating GitHub webhooks with an Azure Function App to support automated security operations.
+
 ## Overview
 
 In this hands-on lab, you’ll explore GitHub Advanced Security (GHAS) to enhance the security of your repositories. The lab includes using Dependabot and Software Composition Analysis (SCA) to identify and remediate dependency vulnerabilities.
@@ -65,7 +69,7 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure credentials. Click on the **Environment** option to verify the credentials.
 
-   ![Picture1](./images/GS7.png)
+   ![Picture1](./images/GSnew.png)
 
 ## Utilizing the Split Window Feature
  
