@@ -27,9 +27,9 @@ In this module, you will learn and perform:
 
 In this task, you will learn how to enhance CodeQL's security analysis by enabling advanced query configurations and integrating extended security queries. You will gain experience in modifying CodeQL workflows, committing changes related to security vulnerabilities in code, and understanding how CodeQL will accurately identify specific issues, such as clear-text logging of sensitive information, while filtering out less relevant findings. This will depend your understanding of leveraging CodeQL for more precise and effective security scanning in your codebase.
 
-1. In the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization, click on repositories from the top navigation pane.
+1. In the **ghas-bootcamp-xxxx-xx-xx-<inject key="Deployment-id" enableCopy="false"/>** organization, click on Repositories from the top navigation pane.
 
-   ![github-advisory-database](../images/T1.1S1.png)
+   ![github-advisory-database](../images/T1s1new.png)
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
@@ -199,4 +199,4 @@ In this module, you have completed the following:
 
 ### You have successfully completed the module. Now, click on **Next >>** from the lower right corner to move on to the next page.
             
- ![Picture1](../images/NEXT-PAGEak.png)
+ ![Picture1](../images/np7.png)
