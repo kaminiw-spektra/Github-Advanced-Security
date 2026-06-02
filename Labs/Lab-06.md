@@ -211,14 +211,20 @@ In this task, you will create and apply a custom secret pattern to detect specif
 1. In New custom pattern, proivde following details and click **Save and dry run** **(7)** to discover two values of concern - the first being the GitHub Personal Access Token we corrupted earlier, and the second being the `Password123!` value mentioned earlier. 
 
    - **Pattern name**: **Test-Pattern** **(1)**. 
+
    - **Secret format** (specified as a regular expression): provide regular expression patterns as ``[a-zA-Z0-9!.,$%&*+?^_`{|}()[\]\\/~-][a-zA-Z0-9\t !.,$%&*+?^_`{|}()[\]\\/~-]*`` **(2)**.
+
    - Expand **More options** **(3)**, as you need **Before secret** and **After secret** values. 
+
    - **Before Secret**:  provide regular expression patterns as `(?:\A|[^a-zA-Z0-9])(?i)(?:api|jwt|mysql)?[_.-]?(?:[Pp]ass?(?:wo?r?d|code|phrase)|[Pp]wd|secret)[\t ]*(={1,3}|:)[\t ]*(?:["']|b["'])?` **(4)**.
+
    - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
+
    - **Test string**:  `gH4$kP!2w_ ` **(6)**
+
    - Click on **Save and dry run (7)**
      
-     ![push-protection1](../images/T3S3.png)
+      ![push-protection1](../images/T3S3.png)
       
       > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
       
