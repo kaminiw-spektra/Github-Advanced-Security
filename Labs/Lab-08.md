@@ -67,6 +67,8 @@ In this task, you will create a security campaign using GitHub Security features
 
 8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **ghas-bootcamp-WebGoat** to view its alerts.
 
+    >**Note:** After publishing the campaign, if the newly created campaign does not appear immediately, refresh the page to allow the latest changes to load and display the campaign.
+
     ![](../images/T1S7i.png)
 
 1. Now, click on the first **Server-Side request forgery** issue.
@@ -92,6 +94,8 @@ In this task, you will create a security campaign using GitHub Security features
     ![](../images/T1S12iiinew.png)
     
     ![](../images/T1S12iinew.png)
+
+    >**Note:** Merging the pull request triggers a new CodeQL scan. The scan may take a 5-30 minutes to complete. Wait for the workflow to finish before reviewing the results, then verify that the Critical CodeQL alerts have been updated and that 1 alert is marked as closed.
 
 ## Task 2: Tracking Security Campaign
 
