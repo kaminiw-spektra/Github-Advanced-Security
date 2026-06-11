@@ -55,6 +55,10 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/mod1org5new.png)
 
+1. In the New configuration window, review the configuration settings and select **Custom configuration** to continue creating an organization-level security configuration.
+
+   ![Code Security Configurations](../images/mod1org5newconfig.png)
+
 1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
    ![Code Security Configurations](../images/mod1.png)
