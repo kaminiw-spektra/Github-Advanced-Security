@@ -87,11 +87,25 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/saveconf.png)
 
-1. On the **Apply Configuration** page, select **4 of 5 repositories (1)**, making sure to exclude the **.github** public repository. Then, click on **Apply configuration (2)** to apply the settings across all repositories. Next, select **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** **(3)** and click **Apply (4)** when prompted. This will activate Security alerts for all repositories in your organization, helping to detect any exposed secrets or sensitive information.
+1. Locate the newly created organization configuration and select the **Edit (pencil)** icon to modify the configuration settings and assign repositories.
 
-   ![Code Security Configurations](../images/a38a.png)
+   ![Code Security Configurations](../images/saveconfa.png)
 
-   ![Code Security Configurations](../images/a38bnew1.png)
+1. In the Apply to section, select the drop-down currently set to **None (1)**, choose **Selected repositories (2)**, and then select **Select repositories (3)** to choose the repositories to which you want to apply the configuration.
+
+   ![Code Security Configurations](../images/saveconfb.png)
+
+   ![Code Security Configurations](../images/saveconfc.png)
+
+1. On the **Apply Configuration** page, select **4 of 5 repositories (1)**, making sure to exclude the **.github** public repository. Then select **Review (2)** to confirm your selections and continue.
+
+   ![Code Security Configurations](../images/saveconfd.png)
+
+1. Click the green **Save and enable** button located in the bottom right corner of the window.
+
+   >**Note:** This action will apply the configuration settings to 4 existing repositories
+
+   ![Code Security Configurations](../images/saveconfe.png)
 
 1. You will find that the organization configurations for **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** are enforced on 4 repositories.
 
