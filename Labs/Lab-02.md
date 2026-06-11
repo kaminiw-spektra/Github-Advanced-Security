@@ -51,13 +51,13 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/nc1.png)
 
-1. The **Name** field should be filled with **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** **(1)**, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`**(2)**, offering a brief overview of what the configuration will accomplish.
-
-   ![Code Security Configurations](../images/mod1org5new.png)
-
 1. In the New configuration window, review the configuration settings and select **Custom configuration** to continue creating an organization-level security configuration.
 
    ![Code Security Configurations](../images/mod1org5newconfig.png)
+
+1. The **Name** field should be filled with **Security_settings_enable_<inject key="DeploymentID" enableCopy="false"/>** **(1)**, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`**(2)**, offering a brief overview of what the configuration will accomplish.
+
+   ![Code Security Configurations](../images/mod1org5new.png)
 
 1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
