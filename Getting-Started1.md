@@ -61,7 +61,7 @@ In this hands-on lab, the architecture flow highlights key components of GitHub 
  
 Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser. To complete the lab, utilize this virtual machine during the session.
  
-   ![Access Your VM and Lab Guide](./images/i13a.png)
+   ![Access Your VM and Lab Guide](./images/getting-started-page.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -89,11 +89,17 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
    ![Picture1](./images/resolution.png ) 
 
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+   ![](./images/resize-vm-guide.png)
+
 ## Login to GitHub
 
 1. In the LABVM desktop, search for **Microsoft Edge** **(1)**, click on **Microsoft Edge** **(2)** browser.
 
-   ![Picture1](./images/Edge.png)
+   ![Picture1](./images/microsoft-edge.png)
 
    >**Note**: On the Welcome to Microsoft Edge page, select  **Start without your data**, on **Stay current with your browsing data** select **Confirm and continue** and on the help for importing Google browsing data page, select the  **Continue without this data**  button. Then, proceed to select  **Confirm and start browsing**  on the next page
 has a context menu.
@@ -142,7 +148,7 @@ has a context menu.
 
 1. You are now successfully logged in to GitHub and have been redirected to the GitHub homepage.
 
-   ![Picture1](./images/GS5anew.png)
+   ![Picture1](./images/github-homepage.png)
 
 ## Support Contact
 

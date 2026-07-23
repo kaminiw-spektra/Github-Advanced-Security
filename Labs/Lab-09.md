@@ -75,7 +75,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
 1. To explore the Security Overview dashboard, first click on **Overview (1)** in the left sidebar. At the top of the page, use the filter bar to narrow down alerts **(e.g., archived:false tool:github) (2)** and select a date range using the **calendar dropdown (3)**. As you adjust these filters, all data and metrics on the page, including graphs like **Open alerts over time**, will automatically update to reflect your selected criteria.
 
-   ![Picture1](../images/dashboard1anew.png)
+   ![Picture1](../images/lab8-overview.png)
   
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
@@ -131,25 +131,24 @@ In this task, you will configure GitHub webhooks to send push event data to an A
 
    ![Picture1](../images/ghas-exercise1-9zt.png)
 
-1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create (9)**.
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (7)** at the bottom of the page and subsequently click on **Create (8)**.
 
     | Setting | Action |
     | -- | -- |
     | **Subscription** | Keep it as default **(1)** |
     | **Resource Group** | Lab-VM **(2)** |
-    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |
-    | **Operating System** | **Windows (4)** |    
-    | **Runtime stack** | **Node.js (5)** |
-    | **Version** | **20 LTS (6)** |
-    | **Region** | **East US (7)** |
+    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |   
+    | **Runtime stack** | **Node.js (4)** |
+    | **Version** | **22 LTS (5)** |
+    | **Region** | **East US (6)** |
 
-   ![Picture1](../images/T3S8.png)
+   ![Picture1](../images/lab8-consumption.png)
 
-   ![Picture1](../images/mod8-task3-step8new1.png)
+   ![Picture1](../images/lab8-func-create.png)
 
      >**Note:** Keep rest of the options as default.
 
-     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as **Canada Central, East US 2**, etc.
+     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as **Central US, Canada Central, East US 2**, etc.
  
 1. Once the deployment is completed, click on **Go to resource**.
 
@@ -372,7 +371,7 @@ You can create rulesets to control how users interact with selected branches and
 
 1. On GitHub, navigate to the **main page** of the repository.
 
-1. Under any of	 your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click on **Settings**.
+1. Under any of	 your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **More**  dropdown menu, then click on **Settings**.
 
    ![Picture1](../images/set.png)  
 

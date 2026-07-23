@@ -13,7 +13,7 @@ In this module, we'll cover a series of tasks designed to provide a comprehensiv
 In this module, you will learn and perform:
 
 - Task 1: Add some vulnerable code via a pull request and view the scan results in the PR 
-- Task 2: Create a code with potencial security vulnerabilities
+- Task 2: Create a code with potential security vulnerabilities
 - Task 3: Run a code scan
 - Task 4: Apply autofixes to vulnerabilities
 
@@ -63,7 +63,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 Refer to the link for more information: [Triaging code scanning alerts in pull requests](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests)
 
-## Task 2: Create a code with potencial security vulnerabilities
+## Task 2: Create a code with potential security vulnerabilities
 
 In this task, you will create a new Python file in the repository containing code with intentional security flaws such as SQL injection.
 
@@ -153,9 +153,9 @@ In this task, you will open the Actions tab, find the CodeQL workflow, and check
 
 In this task, you will review detected vulnerabilities in your repository and apply autofixes to automatically resolve security issues, then commit and merge the changes to secure your code.
 
-1. Navigate to the **Security (1)** tab in your repository, and then click on **Code scanning (2)**.
+1. Navigate to the **Security and quality (1)** tab in your repository, and then click on **Code scanning (2)**.
 
-   ![](../images/scant.png)
+   ![](../images/lab6-sq-tab.png)
 
 1. Review the list of vulnerabilities and click on an alert for **app.py** file to view details.
 
@@ -193,7 +193,7 @@ In this module, you have completed the following:
 
 - Learned how CodeQL is different from other static analysis tools
 - Added some vulnerable code via a pull request and viewed the scan results in the PR.
-- Create a code with potencial security vulnerabilities
+- Create a code with potential security vulnerabilities
 - Run a code scan
 - Apply autofixes to fix code vulnerabilities
 
