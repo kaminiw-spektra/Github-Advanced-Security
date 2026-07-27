@@ -233,30 +233,6 @@ In this task, you will configure GitHub webhooks to send push event data to an A
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
-13. From the repository page, click on **Add file (1)** (or the **+ icon**) in the top right, then select **Create new file (2)** from the dropdown.
-
-     ![Picture1](../images/T3S21.png)
-
-14. Create a file named **issue-template.md** **(1)**, add the provided code into the file **(2)**, and then click on **Commit changes...** **(3)** to save.
-
-    ```
-    ## Build Failure
-
-    **Workflow:** ${{ github.workflow }}  
-    **Branch:** ${{ github.ref }}  
-    **Commit:** ${{ github.sha }}  
-    **Actor:** ${{ github.actor }}  
-
-    ### Logs
-    See the attached logs for more details.
-    ```
-
-     ![Picture1](../images/T3S22.png)
-
-15. Enter the commit message and click **Commit changes** to save.
-
-     ![Picture1](../images/lab7testwebhook3.png)
-
 16. Navigate to the **Actions** tab to view and manage your GitHub Actions workflows.
 
      ![Picture1](../images/T3S24.png)
@@ -268,54 +244,73 @@ In this task, you will configure GitHub webhooks to send push event data to an A
 18. Change the file name of the YAML configuration file to **ci.yml** **(1)**. Paste the provided **code** **(2)** into this file to define the workflow configuration. Finally, click on **Commit changes...** **(3)** to save the file with these updates.
 
 	```
-	name: CI 
-	
-	on: [push, pull_request] 
-	
-	jobs: 
-	  build: 
-	    runs-on: ubuntu-latest 
-	
-	    steps: 
-	      - name: Check out the repository 
-	        uses: actions/checkout@v2 
-	
-	      - name: Set up Python 
-	        uses: actions/setup-python@v2 
-	        with: 
-	          python-version: '3.x' 
-	
-	      - name: Install dependencies 
-	        run: | 
-	          python -m pip install --upgrade pip 
-	          pip install -r requirements.txt 
-	
-	      - name: Run tests 
-	        id: run-tests 
-	        run: | 
-	          pytest --junitxml=test-results.xml 
-	        continue-on-error: true 
-	
-	      - name: Upload Test Results 
-	        if: always() 
-	        uses: actions/upload-artifact@v2 
-	        with: 
-	          name: test-results 
-	          path: test-results.xml 
-	
-	      - name: Create GitHub Issue on Failure 
-	        if: failure() 
-	        uses: actions/create-issue@v2 
-	        with: 
-	          token: ${{ secrets.GITHUB_TOKEN }} 
-	          title: Build Failure 
-	          body-path: ./issue-template.md 
-	          labels: bug 
-	          assignees: your-github-username 
-	 
+      name: CI
+
+      on:
+         push:
+         pull_request:
+
+      permissions:
+         contents: read
+         issues: write
+
+      jobs:
+         build:
+            runs-on: ubuntu-latest
+
+            steps:
+               - name: Checkout repository
+                 uses: actions/checkout@v4
+
+               - name: Set up Python
+                 uses: actions/setup-python@v5
+                 with:
+                     python-version: "3.x"
+
+               - name: Install dependencies
+                 run: |
+                     python -m pip install --upgrade pip
+                     pip install -r requirements.txt
+
+               - name: Run tests
+                 run: |
+                     pytest --junitxml=test-results.xml
+
+               - name: Upload Test Results
+                 if: always()
+                 uses: actions/upload-artifact@v4
+                 with:
+                     name: test-results
+                     path: test-results.xml
+
+               - name: Create GitHub Issue on Failure
+                 if: failure()
+                 uses: actions/github-script@v7
+                 with:
+                     github-token: ${{ secrets.GITHUB_TOKEN }}
+                     script: |
+                     const body =
+                        "## Build Failure\n\n" +
+                        "| Field | Value |\n" +
+                        "|-------|-------|\n" +
+                        `| Workflow | ${context.workflow} |\n` +
+                        `| Branch | ${context.ref} |\n` +
+                        `| Commit | ${context.sha} |\n` +
+                        `| Actor | ${context.actor} |\n\n` +
+
+                        "### Workflow Run\n\n" +
+                        `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
+                     await github.rest.issues.create({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        title: "Build Failure",
+                        body: body,
+                         labels: ["bug"]
+                     });
 	```
 
-     ![Picture1](../images/T3S26.png)
+     ![Picture1](../images/lab8-workflow.png)
 
 19. Enter the commit message and click **Commit changes** to save.
 
