@@ -180,7 +180,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     ![push-protection1](../images/T2S12.png)
 
-11. Navigate to Security from the top menu, expand **Secret scanning (1)**, and select **Default (2)**. Then, change the filter to show Closed findings by typing **closed (3)** in the search bar to demonstrate that the secret has been detected.
+11. Navigate to **Security and quality** from the top menu, expand **Secret scanning (1)**, and select **Default (2)**. Then, change the filter to show Closed findings by typing **closed (3)** in the search bar to demonstrate that the secret has been detected.
 
     ![push-protection1](../images/T2S13.png)
 
@@ -258,7 +258,7 @@ Please feel free to go through the documents for further understanding: [Securit
 
 In this module, you have completed the following:
 
- - Demonstrate Secret Scanning Functionality
+ - Demonstrated Secret Scanning Functionality
  - Turned on push protection and tried pushing a new secret (a GitHub token) into a repository
  - Created a custom secret pattern
  - Understanding the results 

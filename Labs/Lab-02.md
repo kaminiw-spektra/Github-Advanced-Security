@@ -23,13 +23,13 @@ In this task, you will apply GitHub’s recommended security settings across you
 
 ### About the security configuration
 
-The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low- and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
+The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
 
 Applying the security configuration to all repositories in your organization
 
 1. On the **Home** page, click on your profile icon in the top right corner.
 
-   ![Profile Menu](../images/T1S1.png)
+   ![Profile Menu](../images/lab2-profile.png)
 
 1. Select **Organizations** from the dropdown menu.
 
@@ -61,11 +61,11 @@ Applying the security configuration to all repositories in your organization
 
 1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
-   ![Code Security Configurations](../images/mod1.png)
+   ![Code Security Configurations](../images/lab2-secret-scanning.png)
 
 1. Leave the **Alerts** option set to **Enabled (1)**, and change the remaining options to **Not set (2)**.
 
-   ![Code Security Configurations](../images/mod2.png)
+   ![Code Security Configurations](../images/lab2-secret-scanning-2.png)
 
 1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is **Enabled**.
 
@@ -147,7 +147,7 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 1. In the Settings menu, under the **Code, planning, and automation** section, click **Actions (1)**, and then select **General (2)**.
 
-   ![Code Security Configurations](../images/T2S3inew.png)
+   ![Code Security Configurations](../images/lab2-actions.png)
 
 1. Select **Allow all actions and reusable workflows (1)**, and then click **Save (2)** to apply the changes.
 

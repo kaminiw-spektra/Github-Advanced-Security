@@ -101,7 +101,7 @@ In this task, you will create a security campaign using GitHub Security features
 
 In this task, you will monitor the status of your security campaign to ensure vulnerabilities are being fixed. You'll track open and closed alerts, apply autofixes where available, and manage progress through the campaign dashboard.
 
-When you create a campaign, the campaign tracking view is displayed and the campaign is listed in the sidebar of the **Security** tab for the organization. You can redisplay the campaign tracking view at any time by selecting it in the sidebar under "Campaigns".
+When you create a campaign, the campaign tracking view is displayed and the campaign is listed in the sidebar of the **Security and quality** tab for the organization. You can redisplay the campaign tracking view at any time by selecting it in the sidebar under "Campaigns".
 
  Here, you can view the details of the **Campaign's progress** and **Status**, along with the alerts supported by **Copilot Autofix**.
 
@@ -118,7 +118,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
 1. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security (1)** from the top menu, then click on **Critical CodeQL alert (2)** under Campaigns. Here, you will see that **One of the alerts havs been closed (3)**.
 
-   ![](../images/a47new.png)
+   ![](../images/lab7-campaign.png)
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
@@ -168,31 +168,33 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
 In this task, you will edit and manage an existing security campaign by updating its details, closing it when completed, or deleting it if no longer needed. This helps keep your campaign list organized and ensures active focus on unresolved security issues.
 
-There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security tab of the organization.
+There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security and quality tab of the organization.
 
 1. On GitHub, navigate to the main page of the organization.
 
    ![Picture1](../images/mod7-task3-step1new.png)
 
-1. Under your organization name, Click the **Security** tab from the top right corner of the navigation bar.
+1. Under your organization name, Click the **Security and quality** tab from the top right corner of the navigation bar.
 
-   ![Picture1](../images/security-tabat.png)
+   ![Picture1](../images/stnew.png)
 
 1. In the sidebar, select **Campaigns (1)** click the name of the campaign **Critical CodeQL alert (2)** to display the campaign tracking view.
 
-   ![Picture1](../images/mod7-task3-step3new.png)
+   ![Picture1](../images/lab7-campaign2.png)
 
 1. Click the three-dot menu **(⋯) (1)** in the top-right corner and select **Edit campaign (2)** to modify the campaign settings.
 
-   ![Picture1](../images/security-tabatanew.png)
+   ![Picture1](../images/lab7-editCompaign.png)
 
 1. In the **Edit Campaign** section, you can update the **Campaign name (1)**, **Short description (2)**, **Campaign due date (3)**, and **Campaign managers (4)**. Once done, click on **Save changes (5)** to apply the updates.
 
    ![](../images/T3S5new.png)
 
-1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
+1. For deleting or closing the campaign select the required option **close campaign** or **duplicate campaign**, **delete campaign** by selecting the campaign.
 
    - **Close campaign** to remove it from the active campaigns list and display it on the Closed campaigns view.
+
+   - **Duplicate campaign** to create an identical copy of an existing scope, target date, or filter set without affecting active tracking.
 
    - **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
 

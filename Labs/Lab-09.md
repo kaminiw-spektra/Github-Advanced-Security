@@ -75,7 +75,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
 1. To explore the Security Overview dashboard, first click on **Overview (1)** in the left sidebar. At the top of the page, use the filter bar to narrow down alerts **(e.g., archived:false tool:github) (2)** and select a date range using the **calendar dropdown (3)**. As you adjust these filters, all data and metrics on the page, including graphs like **Open alerts over time**, will automatically update to reflect your selected criteria.
 
-   ![Picture1](../images/dashboard1anew.png)
+   ![Picture1](../images/lab8-overview.png)
   
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
@@ -131,25 +131,24 @@ In this task, you will configure GitHub webhooks to send push event data to an A
 
    ![Picture1](../images/ghas-exercise1-9zt.png)
 
-1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create (9)**.
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (7)** at the bottom of the page and subsequently click on **Create (8)**.
 
     | Setting | Action |
     | -- | -- |
     | **Subscription** | Keep it as default **(1)** |
     | **Resource Group** | Lab-VM **(2)** |
-    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |
-    | **Operating System** | **Windows (4)** |    
-    | **Runtime stack** | **Node.js (5)** |
-    | **Version** | **20 LTS (6)** |
-    | **Region** | **East US (7)** |
+    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |   
+    | **Runtime stack** | **Node.js (4)** |
+    | **Version** | **22 LTS (5)** |
+    | **Region** | **East US (6)** |
 
-   ![Picture1](../images/T3S8.png)
+   ![Picture1](../images/lab8-consumption.png)
 
-   ![Picture1](../images/mod8-task3-step8new1.png)
+   ![Picture1](../images/lab8-func-create.png)
 
      >**Note:** Keep rest of the options as default.
 
-     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as **Canada Central, East US 2**, etc.
+     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as **Central US, Canada Central, East US 2**, etc.
  
 1. Once the deployment is completed, click on **Go to resource**.
 
@@ -234,30 +233,6 @@ In this task, you will configure GitHub webhooks to send push event data to an A
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
-13. From the repository page, click on **Add file (1)** (or the **+ icon**) in the top right, then select **Create new file (2)** from the dropdown.
-
-     ![Picture1](../images/T3S21.png)
-
-14. Create a file named **issue-template.md** **(1)**, add the provided code into the file **(2)**, and then click on **Commit changes...** **(3)** to save.
-
-    ```
-    ## Build Failure
-
-    **Workflow:** ${{ github.workflow }}  
-    **Branch:** ${{ github.ref }}  
-    **Commit:** ${{ github.sha }}  
-    **Actor:** ${{ github.actor }}  
-
-    ### Logs
-    See the attached logs for more details.
-    ```
-
-     ![Picture1](../images/T3S22.png)
-
-15. Enter the commit message and click **Commit changes** to save.
-
-     ![Picture1](../images/lab7testwebhook3.png)
-
 16. Navigate to the **Actions** tab to view and manage your GitHub Actions workflows.
 
      ![Picture1](../images/T3S24.png)
@@ -269,54 +244,73 @@ In this task, you will configure GitHub webhooks to send push event data to an A
 18. Change the file name of the YAML configuration file to **ci.yml** **(1)**. Paste the provided **code** **(2)** into this file to define the workflow configuration. Finally, click on **Commit changes...** **(3)** to save the file with these updates.
 
 	```
-	name: CI 
-	
-	on: [push, pull_request] 
-	
-	jobs: 
-	  build: 
-	    runs-on: ubuntu-latest 
-	
-	    steps: 
-	      - name: Check out the repository 
-	        uses: actions/checkout@v2 
-	
-	      - name: Set up Python 
-	        uses: actions/setup-python@v2 
-	        with: 
-	          python-version: '3.x' 
-	
-	      - name: Install dependencies 
-	        run: | 
-	          python -m pip install --upgrade pip 
-	          pip install -r requirements.txt 
-	
-	      - name: Run tests 
-	        id: run-tests 
-	        run: | 
-	          pytest --junitxml=test-results.xml 
-	        continue-on-error: true 
-	
-	      - name: Upload Test Results 
-	        if: always() 
-	        uses: actions/upload-artifact@v2 
-	        with: 
-	          name: test-results 
-	          path: test-results.xml 
-	
-	      - name: Create GitHub Issue on Failure 
-	        if: failure() 
-	        uses: actions/create-issue@v2 
-	        with: 
-	          token: ${{ secrets.GITHUB_TOKEN }} 
-	          title: Build Failure 
-	          body-path: ./issue-template.md 
-	          labels: bug 
-	          assignees: your-github-username 
-	 
+      name: CI
+
+      on:
+         push:
+         pull_request:
+
+      permissions:
+         contents: read
+         issues: write
+
+      jobs:
+         build:
+            runs-on: ubuntu-latest
+
+            steps:
+               - name: Checkout repository
+                 uses: actions/checkout@v4
+
+               - name: Set up Python
+                 uses: actions/setup-python@v5
+                 with:
+                     python-version: "3.x"
+
+               - name: Install dependencies
+                 run: |
+                     python -m pip install --upgrade pip
+                     pip install -r requirements.txt
+
+               - name: Run tests
+                 run: |
+                     pytest --junitxml=test-results.xml
+
+               - name: Upload Test Results
+                 if: always()
+                 uses: actions/upload-artifact@v4
+                 with:
+                     name: test-results
+                     path: test-results.xml
+
+               - name: Create GitHub Issue on Failure
+                 if: failure()
+                 uses: actions/github-script@v7
+                 with:
+                     github-token: ${{ secrets.GITHUB_TOKEN }}
+                     script: |
+                     const body =
+                        "## Build Failure\n\n" +
+                        "| Field | Value |\n" +
+                        "|-------|-------|\n" +
+                        `| Workflow | ${context.workflow} |\n` +
+                        `| Branch | ${context.ref} |\n` +
+                        `| Commit | ${context.sha} |\n` +
+                        `| Actor | ${context.actor} |\n\n` +
+
+                        "### Workflow Run\n\n" +
+                        `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
+                     await github.rest.issues.create({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        title: "Build Failure",
+                        body: body,
+                         labels: ["bug"]
+                     });
 	```
 
-     ![Picture1](../images/T3S26.png)
+     ![Picture1](../images/lab8-workflow.png)
 
 19. Enter the commit message and click **Commit changes** to save.
 
@@ -372,7 +366,7 @@ You can create rulesets to control how users interact with selected branches and
 
 1. On GitHub, navigate to the **main page** of the repository.
 
-1. Under any of	 your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click on **Settings**.
+1. Under any of	 your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **More**  dropdown menu, then click on **Settings**.
 
    ![Picture1](../images/set.png)  
 

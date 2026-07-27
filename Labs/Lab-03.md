@@ -9,7 +9,7 @@ In this module, you will explore Dependabot, Secret Scanning, and Code Scanning,
 ## Lab Objectives
 In this module, you will perform:
 
-- Task 1: Depandabot and its features
+- Task 1: Dependabot and its features
 - Task 2: Secret Scanning and its features
 - Task 3: Code Scanning
 
@@ -137,7 +137,7 @@ CodeQL is a programming language and associated tools that treat code like data.
 
 In this module, you have completed the following:
 
-+ Depandabot and its features.
++ Dependabot and its features.
 + Secret Scanning and its features.
 + Code Scanning. 
 
