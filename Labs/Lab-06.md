@@ -54,7 +54,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Go to your profile on top of the right hand, and then select **Organizations**.
 
-   ![Picture1](../images/T1s5.png) 
+   ![Picture1](../images/m2-org.png) 
 
 1. Select **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from organizations.
 
@@ -66,7 +66,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. In the ghas-bootcamp-javascript repository navigate to **Settings** from the top navigation pane.
 
-   ![github-advisory-database](../images/sp.png)
+   ![github-advisory-database](../images/m5-settings.png)
 
 1. From the left navigation pane, click on **Advanced Security**.
 
@@ -122,7 +122,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings (1)**, click on **Advanced security (2)** under Securilty. 
 
-   ![github-advisory-database](../images/g12new1.png)
+   ![github-advisory-database](../images/m5-gear.png)
    
    ![github-advisory-database](../images/image1anew.png)
 
@@ -200,7 +200,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
 
 1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings (1)** tab of the repo, click on **Advanced security (2)**.
 
-   ![github-advisory-database](../images/g12new.png)
+   ![github-advisory-database](../images/m5-gear.png)
    
    ![github-advisory-database](../images/image1anew.png)
 

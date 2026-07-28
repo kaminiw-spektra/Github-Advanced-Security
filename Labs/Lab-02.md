@@ -33,7 +33,7 @@ Applying the security configuration to all repositories in your organization
 
 1. Select **Organizations** from the dropdown menu.
 
-   ![Your Organizations](../images/T1s5.png)
+   ![Your Organizations](../images/m2-org.png)
 
 1. Choose **ghas-bootcamp-xxxx-xx-xx-<inject key="DeploymentID" enableCopy="false"/>** from the list of organizations.
 
@@ -151,7 +151,7 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 1. Select **Allow all actions and reusable workflows (1)**, and then click **Save (2)** to apply the changes.
 
-   ![github-advisory-database](../images/acnew.png)
+   ![github-advisory-database](../images/m2-general-actions.png)
 
    >**Note:** Make sure to click on the **Save** button, even if **Allow all actions and reusable workflows** is already selected.
 
@@ -165,7 +165,7 @@ In this task, you will navigate to your organization’s **Settings** and enable
 
 1. Under the **Code Scanning** section, please ensure that **Copilot Autofix** is enabled across your entire organization.
 
-   ![Repository Settings](../images/mod4new.png)
+   ![Repository Settings](../images/m2-copilot.png)
 
 ## Summary
 
